@@ -1,0 +1,119 @@
+/* SCSS Document */
+
+
+$array-spacer: 5,10,15,20,25,30,35,40,45,50,100,200;
+
+
+@each $dim in $array-spacer  {
+    .spacer#{$dim} {
+        height: #{$dim}px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block;
+    }
+}
+
+/* Quanto sopra equivale a queste dichiarazioni:
+
+    .spacer5 { height: 5px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer10 { height: 10px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer15 { height: 15px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer20 { height: 20px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer25 { height: 25px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer30 { height: 30px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer35 { height: 35px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer40 { height: 40px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer45 { height: 45px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer50 { height: 50px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer100 { height: 100px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+    .spacer200 { height: 200px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+
+*/
+
+
+/* allineamento responsivo del testo */
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: $screen-sm-min) {
+     .text-sm-left { text-align: left; }
+     .text-sm-right { text-align: right; }
+     .text-sm-center { text-align: center; }
+     .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: $screen-md-min) {
+     .text-md-left { text-align: left; }
+     .text-md-right { text-align: right; }
+     .text-md-center { text-align: center; }
+     .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: $screen-lg-min) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
+
+
+/* centratura delle colonne, utile  quando sono dispari o comunque non aderenti alla griglia di bootstrap */
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+/* allineamento testo */
+.tleft {
+    text-align: left !important;
+}
+
+.tright {
+    text-align: right !important;
+}
+
+.tcenter {
+    text-align: center !important;
+}
+
+.tjustify {
+    text-align: justify !important;
+}
+
+.tinherit {
+    text-align: inherit !important;
+}
+
+.tmiddle {
+    vertical-align: middle !important;
+}
+
+.tbottom {
+    vertical-align: bottom !important;
+}
+
+.ttop {
+    vertical-align: top !important;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+.small {
+    width: 150px;
+}
+.small-flex {
+    width: 30%;
+}

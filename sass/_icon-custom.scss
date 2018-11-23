@@ -1,0 +1,329 @@
+/* icone varie */
+.icon-storico {
+    @include img-retina("../images/icon-storico.png", "../images/icon-storico@2x.png", 31px, 32px);
+}
+
+.icon-identificativi {
+    @include img-retina("../images/icon-identificativi.png", "../images/icon-identificativi@2x.png", 31px, 32px);
+}
+
+.icon-riferimenti-normativi {
+    @include img-retina("../images/icon-riferimenti-normativi.png", "../images/icon-riferimenti-normativi@2x.png", 31px, 32px);
+}
+
+.icon-menu {
+    @include img-retina("../images/icon-menu.png", "../images/icon-menu@2x.png", 31px, 32px);
+}
+
+.icon {
+    font-family: sosa-regular;
+    display    : inline-block;
+    font-size  : 1.2em;
+
+    &.icon-progetto:after {
+        content       : 'a';
+        text-transform: initial;
+    }
+
+    &.icon-capitolato:after {
+        content       : "\ ";
+        text-transform: initial;
+    }
+
+    &.icon-salva:after {
+        content       : "å";
+        text-transform: initial;
+    }
+
+    &.icon-annulla:after {
+        content       : "ã";
+        text-transform: initial;
+    }
+
+    &.icon-anteprima:after {
+        content       : "]";
+        text-transform: initial;
+    }
+
+    &.icon-riepilogo:after {
+        content       : "é";
+        text-transform: initial;
+    }
+
+    &.icon-impostazioni:after {
+        content       : "W";
+        text-transform: initial;
+    }
+
+    &.icon-certificazioni:after {
+        content       : "é";
+        text-transform: initial;
+    }
+    &.icon-help:after {
+        content       : "?";
+        text-transform: initial;
+    }
+    &.icon-add:after {
+        content       : "{";
+        text-transform: initial;
+    }
+    &.icon-up:after {
+        content       : "î";
+        text-transform: initial;
+    }
+    &.icon-down:after {
+        content       : "ï";
+        text-transform: initial;
+    }
+    &.icon-custom:after {
+        content       : "k";
+        text-transform: initial;
+    }
+}
+
+/* @group ICONE PRINCIPALI */
+
+.icon-pareti {
+    @include img-retina("../images/icon-pareti.png", "../images/icon-pareti@2x.png", 53px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-contropareti {
+    @include img-retina("../images/icon-contropareti.png", "../images/icon-contropareti@2x.png", 53px, 49px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-controsoffitti {
+    @include img-retina("../images/icon-controsoffitti.png", "../images/icon-controsoffitti@2x.png", 53px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-controsoffitti-modulari-ispezionabili {
+    @include img-retina("../images/icon-controsoffitti-modulari-ispezionabili.png", "../images/icon-controsoffitti-modulari-ispezionabili@2x.png", 53px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-sistema-cappotto-termico {
+    @include img-retina("../images/icon-sistema-cappotto-termico.png", "../images/icon-sistema-cappotto-termico@2x.png", 53px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-involucro-esterno {
+    @include img-retina("../images/icon-involucro-esterno.png", "../images/icon-involucro-esterno@2x.png", 60px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-sottofondi-secco {
+    @include img-retina("../images/icon-sottofondi-secco.png", "../images/icon-sottofondi-secco@2x.png", 53px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-pavimenti-sopraelevati {
+    @include img-retina("../images/icon-pavimenti-sopraelevati.png", "../images/icon-pavimenti-sopraelevati@2x.png", 53px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-trattamenti-superficiali {
+    @include img-retina("../images/icon-trattamenti-superficiali.png", "../images/icon-trattamenti-superficiali@2x.png", 53px, 46px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-intonaci {
+    @include img-retina("../images/icon-intonaci.png", "../images/icon-intonaci@2x.png", 53px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.icon-blank {
+    // @include img-retina("../images/icon-intonaci.png", "../images/icon-intonaci@2x.png", 31px, 32px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+/* @fine ICONE PRINCIPALI */
+
+/* @group ICONE pareti */
+
+.icon-pareti-soluzioni-base {
+    @include img-retina("../images/icon-pareti-soluzioni-base.png", "../images/icon-pareti-soluzioni-base@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-pareti-ambienti-umidi {
+    @include img-retina("../images/icon-pareti-ambienti-umidi.png", "../images/icon-pareti-ambienti-umidi@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-pareti-antincendio {
+    @include img-retina("../images/icon-pareti-antincendio.png", "../images/icon-pareti-antincendio@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-pareti-isolamento-acustico {
+    @include img-retina("../images/icon-pareti-isolamento-acustico.png", "../images/icon-pareti-isolamento-acustico@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-pareti-antintrusione {
+    @include img-retina("../images/icon-pareti-antintrusione.png", "../images/icon-pareti-antintrusione@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-pareti-resistenza-urti {
+    @include img-retina("../images/icon-pareti-resistenza-urti.png", "../images/icon-pareti-resistenza-urti@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-pareti-installazioni-impiantistiche {
+    @include img-retina("../images/icon-pareti-installazioni-impiantistiche.png", "../images/icon-pareti-installazioni-impiantistiche@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+/* @fine ICONE pareti */
+
+/* @group ICONE contropareti */
+
+.icon-contropareti-soluzioni-base {
+    @include img-retina("../images/icon-contropareti-soluzioni-base.png", "../images/icon-contropareti-soluzioni-base@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-contropareti-soluzioni-grandi-pareti {
+    @include img-retina("../images/icon-contropareti-soluzioni-grandi-pareti.png", "../images/icon-contropareti-soluzioni-grandi-pareti@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-contropareti-antincendio {
+    @include img-retina("../images/icon-contropareti-antincendio.png", "../images/icon-contropareti-antincendio@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-contropareti-isolamento-acustico {
+    @include img-retina("../images/icon-contropareti-isolamento-acustico.png", "../images/icon-contropareti-isolamento-acustico@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-contropareti-isolamento-termico {
+    @include img-retina("../images/icon-contropareti-isolamento-termico.png", "../images/icon-contropareti-isolamento-termico@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+/* @fine ICONE contropareti */
+
+/* @group ICONE controsoffitti */
+
+.icon-controsoffitti-soluzioni-base {
+    @include img-retina("../images/icon-controsoffitti-soluzioni-base.png", "../images/icon-controsoffitti-soluzioni-base@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-controsoffitti-ambienti-umidi {
+    @include img-retina("../images/icon-controsoffitti-ambienti-umidi.png", "../images/icon-controsoffitti-ambienti-umidi@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-controsoffitti-antincendio {
+    @include img-retina("../images/icon-controsoffitti-antincendio.png", "../images/icon-controsoffitti-antincendio@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-controsoffitti-isolamento-acustico {
+    @include img-retina("../images/icon-controsoffitti-isolamento-acustico.png", "../images/icon-controsoffitti-isolamento-acustico@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-controsoffitti-assorbimento-acustico {
+    @include img-retina("../images/icon-controsoffitti-assorbimento-acustico.png", "../images/icon-controsoffitti-assorbimento-acustico@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-controsoffitti-isolamento-termico {
+    @include img-retina("../images/icon-controsoffitti-isolamento-termico.png", "../images/icon-controsoffitti-isolamento-termico@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-controsoffitti-antisfondellamento {
+    @include img-retina("../images/icon-controsoffitti-antisfondellamento.png", "../images/icon-controsoffitti-antisfondellamento@2x.png", 54px, 48px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+/* @fine ICONE controsoffitti */
+
+/* @group ICONE controsoffitti modulari ispezionabili */
+
+.icon-cmi-soluzioni-base-modulari {
+    @include img-retina("../images/icon-cmi-soluzioni-base-modulari.png", "../images/icon-cmi-soluzioni-base-modulari@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-cmi-antincendio {
+    @include img-retina("../images/icon-cmi-antincendio.png", "../images/icon-cmi-antincendio@2x.png", 55px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-cmi-assorbimento-acustico {
+    @include img-retina("../images/icon-cmi-assorbimento-acustico.png", "../images/icon-cmi-assorbimento-acustico@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+/* @fine ICONE controsoffitti modulari ispezionabili */
+
+/* @group ICONE aquapanel */
+
+.icon-aquapanel-rivestimento-facciata {
+    @include img-retina("../images/icon-aquapanel-rivestimento-facciata.png", "../images/icon-aquapanel-rivestimento-facciata@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-aquapanel-controsoffitto-esterno {
+    @include img-retina("../images/icon-aquapanel-controsoffitto-esterno.png", "../images/icon-aquapanel-controsoffitto-esterno@2x.png", 61px, 50px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-aquapanel-tamponamento {
+    @include img-retina("../images/icon-aquapanel-tamponamento.png", "../images/icon-aquapanel-tamponamento@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+/* @fine ICONE aquapanel */
+
+
+.icon-sistema-cappotto-termico-submenu {
+    @include img-retina("../images/icon-sistema-cappotto-termico-submenu.png", "../images/icon-sistema-cappotto-termico-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-sottofondi-secco-submenu {
+    @include img-retina("../images/icon-sottofondi-secco-submenu.png", "../images/icon-sottofondi-secco-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-pavimenti-sopraelevati-submenu {
+    @include img-retina("../images/icon-pavimenti-sopraelevati-submenu.png", "../images/icon-pavimenti-sopraelevati-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-trattamenti-superficiali-submenu {
+    @include img-retina("../images/icon-trattamenti-superficiali-submenu.png", "../images/icon-trattamenti-superficiali-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+.icon-intonaci-submenu {
+    @include img-retina("../images/icon-intonaci-submenu.png", "../images/icon-intonaci-submenu@2x.png", 54px, 47px);
+    background-position: center center;
+    background-repeat  : no-repeat;
+}

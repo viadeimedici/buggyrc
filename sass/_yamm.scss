@@ -1,0 +1,78 @@
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+//-----------------------------
+//  Yamm Styles
+//-----------------------------
+
+.yamm {
+    // reset positions
+    .collapse,
+    .dropdown,
+    .dropup,
+    .nav {
+        position: static;
+    }
+    // propagate menu position under container for fw navbars
+    .container {
+        position: relative;
+    }
+    // by default aligns menu to left
+    .dropdown-menu {
+        left: auto;
+        box-shadow: 0px 2px 3px rgba(0,0,0,.15);
+        border: solid 1px $body-color;
+        border-top: none;
+        margin: 0;
+    }
+    // Content with padding
+    .yamm-content {
+        font-size: 14px;
+        padding  : 0 20px 20px 20px;
+        .subcategory h4 {
+            color    : inherit;
+            font-size: 16px;
+            border-bottom: solid 1px #ccc;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            color: #333;
+        }
+        ul ul a {
+            color: #666 !important;
+            display: inline;
+            padding: 6px 0 6px 13px;
+            margin: 0 !important;
+            position: relative;
+            background: url(/images/arrow-list.png) no-repeat left center;
+        }
+        @media (min-width: $screen-sm ) {
+            max-height: 580px;
+            overflow: auto;
+        }
+        @media (max-width: $screen-sm ) {
+            padding: 10px;
+            ul ul a {
+                display: inline-block;
+                border-bottom: solid 1px #ededed;
+                width: 100%;
+            }
+        }
+    }
+    // Fullwidth menu
+    .dropdown.yamm-fw .dropdown-menu {
+        left : 0;
+        right: 0;
+    }
+}
+
+/* Enable Bootstrap Hover Drop Downs */
+// .dropdown-menu li:hover .sub-menu {
+//     visibility: visible;
+// }
+//
+// .dropdown:hover .dropdown-menu {
+//     display: block;
+// }

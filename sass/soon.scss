@@ -1,0 +1,233 @@
+/* CSS Document */
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/Roboto-Bold-webfont.eot');
+    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Bold-webfont.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+    url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+    url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/Roboto-Medium-webfont.eot');
+    src: url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Medium-webfont.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
+    url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+    url('../fonts/Roboto-ÁMedium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/Roboto-Light-webfont.eot');
+    src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Light-webfont.woff2') format('woff2'),
+    url('../fonts/Roboto-Light-webfont.woff') format('woff'),
+    url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+    url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('../fonts/Roboto-Thin-webfont.eot');
+    src: url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Thin-webfont.woff2') format('woff2'),
+    url('../fonts/Roboto-Thin-webfont.woff') format('woff'),
+    url('../fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+    url('../fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* variables */
+
+$simple-breakpoint: 980px;
+
+
+/*----------------------------------*/
+
+/* basic stuff */
+
+/*----------------------------------*/
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-size: 1.125rem;
+}
+
+h2 {
+    font-size: 32px;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 32px;
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+strong {
+    font-family: "robotolight",Helvetica,sans-serif;
+}
+
+a:link, a:visited {
+    color: #337FC5;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: #337FC5;
+    text-decoration: underline;
+}
+
+/* Macroelements  */
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "robotothin",Helvetica,sans-serif;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: #000 url(../images/bg.jpg) no-repeat center top;
+    margin: 0;
+    padding: 40px 0;
+    font-family: "robotothin",Helvetica,sans-serif;
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #fff;
+    text-align: center;
+    @media (max-width: $simple-breakpoint) {
+        padding: 20px 0;
+    }
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+
+footer {
+    display: block;
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+}
+
+
+
+/* header */
+
+header {
+    .menu {
+        font-size: 24px;
+        margin-bottom: 120px;
+    }
+    .logo {
+        display: block;
+        margin: 10px auto;
+        width: 288px;
+        height: 239px;
+        font-size: 0;
+        line-height: 0;
+        span {
+            display: block;
+            width: 288px;
+            height: 239px;
+            @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 288px, 239px);
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+    }
+    h2 {
+        font-size: 34px;
+    }
+    @media (max-width: $simple-breakpoint) {
+        .menu {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        .logo {
+            width: 188px;
+            height: 156px;
+            span {
+                width: 188px;
+                height: 156px;
+                @include img-retina("../images/splash-logo.png", "../images/splash-logo@2x.png", 188px, 156px);
+                background-size: 188px;
+              height: 156px;
+            }
+        }
+        h2 {
+            font-size: 28px;
+        }
+    }
+}
+
+
+/* content */
+
+.content {
+    width: 90%;
+    margin: 40px auto;
+    p {
+        font-size: 24px;
+        line-height: 1.2em;
+        @media (max-width: $simple-breakpoint) {
+            font-size: 20px;
+        }
+    }
+}
+
+
+/* footer */
+
+footer {
+    p {
+        font-family: "robotonormal",Helvetica,sans-serif;
+        color: #486AB6;
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 26px;
+    }
+    .fb-like {
+        display: inline-block;
+        margin: 10px 0;
+    }
+    @media (max-width: $simple-breakpoint) {
+        p {
+            font-family: "robotonormal",Helvetica,sans-serif;
+            color: #486AB6;
+            font-size: 14px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+        .fb-like {
+            margin: 10px 0;
+        }
+    }
+}
