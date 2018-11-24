@@ -3,9 +3,9 @@
 <html>
 
 <head>
-    <title>Vendita fiori artificiali | Vendita piante artificiali | Decor &amp; Flowers</title>
+    <title>Vendita accessori per Buggy | Vendita ricambi | Buggy RC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Per l'arredamento e le decorazioni della casa e del negozio scegli Decor &amp; Flowers, ampia vendita di piante artificiali e fiori artificiali, componenti di arredo, decorazioni a tema per ogni evento o stagione. Vendita di piante finte e fiori finti da arredo.">
+    <meta name="description" content="Per personalizzare il tuo Buggy RC scegli dal nostro catalogo, ti offriamo un'ampia vendita di accessori e ricambi per buggy, carrozzerie, motori, batterie, gomme e molto altro per i modellini di buggy rc. Vendita di ricambi per modellini di auto telecomandate.">
     <!--#include file="inc_head.asp"-->
 </head>
 
@@ -17,7 +17,7 @@
     <div class="container content">
         <!--#include file="inc_slider.asp"-->
         <div class="top-buffer">
-          <h1 class="slogan subtitle">Buggy RC, vendita piante e fiori artificiali</h1><br />
+          <h1 class="slogan subtitle">BuggyRC: vendita accessori e ricambi</h1><br />
         </div>
         <!--#include file="inc_menu.asp"-->
         <div class="col-md-9">

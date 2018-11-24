@@ -5,8 +5,8 @@
                 <li class="dropdown"><a href="/contatti.asp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Contattaci <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <!--<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> +39.0571</a></li>-->
-                        <li><a href="mailto:info@decorandflowers.it"><span class="glyphicon glyphicon-envelope"></span> info@decorandflowers.it</a></li>
-                        <li><a href="/contatti.asp"><span class="glyphicon glyphicon-map-marker"></span> Contatti</a></li>
+                        <li><a href="mailto:info@buggyrc.it"><span class="glyphicon glyphicon-envelope"></span> info@buggyrc.it</a></li>
+                        <li><a href="contatti.asp"><span class="glyphicon glyphicon-map-marker"></span> Contatti</a></li>
                         <!--<li><a href="#"><span class="glyphicon glyphicon-star"></span> Chi siamo</a></li>-->
                     </ul>
                 </li>
@@ -18,8 +18,8 @@
     <div class="container">
         <ul class="nav nav-justified">
             <!--<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> +39.0571</a></li>-->
-            <li><a href="mailto:info@decorandflowers.it"><span class="glyphicon glyphicon-envelope"></span> info@decorandflowers.it</a></li>
-            <li><a href="/contatti.asp"><span class="glyphicon glyphicon-map-marker"></span> Contatti</a></li>
+            <li><a href="mailto:info@buggyrc.it"><span class="glyphicon glyphicon-envelope"></span> info@buggyrc.it</a></li>
+            <li><a href="contatti.asp"><span class="glyphicon glyphicon-map-marker"></span> Contatti</a></li>
             <!--<li><a href="#"><span class="glyphicon glyphicon-star"></span> Chi siamo</a></li>-->
         </ul>
     </div>
@@ -27,7 +27,7 @@
 <nav class="navbar navbar-inverse service-menu hidden-xs last-top-menu">
     <div class="container">
         <ul class="nav nav-justified">
-            <li><a href="https://www.decorandflowers.it"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="https://www.buggyrc.it"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <%if idsession>0 then%>
               <li><a href="/admin/logout.asp"><span class="glyphicon glyphicon-log-in"></span> LOG OUT</a></li>
             <%else%>

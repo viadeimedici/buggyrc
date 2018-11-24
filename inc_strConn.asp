@@ -6,7 +6,7 @@ Response.Expires = -1500
 On Error Resume Next
 
 	Set conn = Server.CreateObject("ADODB.Connection")
-  conn.open = "Provider = SQLOLEDB; Data Source = 62.149.153.60; Database = MSSql145843; User ID = MSSql145843; Password=4141i46474"
+  conn.open = "Provider = SQLOLEDB; Data Source = 62.149.153.43; Database = MSSql142868; User ID = MSSql142868; Password=7lq95l1f76"
 
 	path_img="d:\inetpub\webs\decorandflowersit\public\"
 	path_thumb="d:\inetpub\webs\decorandflowersit\public\thumb\"
@@ -15,7 +15,7 @@ On Error Resume Next
 	toUrl_completo = Request.ServerVariables("SCRIPT_NAME")
 	toUrl = Request.ServerVariables("SCRIPT_NAME")
 	fromURL_preferiti=fromURL
-	
+
 	'strDaDoveVengo = Request.Servervariables("HTTP_REFERER")
 	UltimoSlash1 = InStrRev(fromURL,"/")
 	fromURL = Mid((fromURL),(UltimoSlash1 + 1), len(fromURL)- UltimoSlash1)

@@ -2,20 +2,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 address-col">
-                <img src="/images/logo_v3_footer.png" alt="Decor & Flowers" style="width: 100%; padding-bottom: 15px;"/>
+                <img src="images/logo_v3_footer.png" alt="Decor & Flowers" style="width: 100%; padding-bottom: 15px;"/>
                 <p>
-                    Decorandflowers<br>
+                    BuggyRc.it è un marchio di<br />Decorandflowers<br>
                     C.F. e Iscr. Reg. Impr. di Firenze 06741510488<br />
                     R.E.A. di Firenze<br />
                     Via delle mimose, 13<br />
                     50050 Capraia e Limite (Firenze)<br />
-                    E-mail: info@decorandflowers.it
+                    E-mail: info@buggyrc.it
                 </p>
-                <!--<h4>Contatti Social</h4>
-                <p class="social">
-                    <a href="#"><i class="fa fa-facebook-square"></i></a>
-                    <a href="#"><i class="fa fa-youtube-square"></i></a>
-                </p>-->
             </div>
             <div class="col-md-3 menu-col">
                 <h4>Cerca per Eventi</h4>
@@ -64,7 +59,7 @@
                     <li>Bonifico Bancario - PostePay</li>
                     <li>Contrassegno</li>
                     <li>Carte di credito - Prepagate - PayPal<br />
-                        <img src="/images/payment.png" style="padding: 5px 15px 0px 0px;">
+                        <img src="images/payment.png" style="padding: 5px 15px 0px 0px;">
                     </li>
                 </ul>
             </div>
@@ -86,10 +81,10 @@
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="/javascripts/bootstrap.min.js"></script>
-<script src="/javascripts/readmore.min.js"></script>
-<script src="/javascripts/jquery.fancybox.min.js"></script>
-<script src="/javascripts/custom.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/readmore.min.js"></script>
+<script src="javascripts/jquery.fancybox.min.js"></script>
+<script src="javascripts/custom.js"></script>
 
 <script>
 $(document).ready(function() {
