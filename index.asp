@@ -17,7 +17,7 @@
     <div class="container content">
         <!--#include file="inc_slider.asp"-->
         <div class="top-buffer">
-          <h1 class="slogan subtitle">Decor &amp; Flowers, vendita piante e fiori artificiali</h1><br />
+          <h1 class="slogan subtitle">Buggy RC, vendita piante e fiori artificiali</h1><br />
         </div>
         <!--#include file="inc_menu.asp"-->
         <div class="col-md-9">
@@ -27,7 +27,7 @@
                     <h4 class="subtitle">Categorie in evidenza</h4>
                 </div>
                 <%
-                
+
                 Set cat_rs=Server.CreateObject("ADODB.Recordset")
                 sql = "SELECT TOP 4 * "
                 sql = sql + "FROM Categorie_1 "
