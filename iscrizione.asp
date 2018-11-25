@@ -111,23 +111,23 @@ if mode=1 then
 			HTML1 = HTML1 & "<html>"
 			HTML1 = HTML1 & "<head>"
 			HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-			HTML1 = HTML1 & "<title>DecorAndFlowers.it</title>"
+			HTML1 = HTML1 & "<title>Buggyrc.it</title>"
 			HTML1 = HTML1 & "</head>"
 			HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
 			HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
 			HTML1 = HTML1 & "<tr>"
 			HTML1 = HTML1 & "<td>"
-			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Complimenti "&nome&" "&cognome&"! La tua iscrizione a www.decorandflowers.it &egrave; avvenuta correttamente.<br>Da adesso potrai ordinare i nostri prodotti senza dover inserire nuovamente i tuoi dati.</font><br>"
-			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Dati sensibili e determinanti per l'accesso ai servizi di www.decorandflowers.it:<br>Nome e Cognome: <b>"&nome&" "&cognome&"</b><br>Login: <b>"&email&"</b><br>Password: <b>"&password&"</b><br><br>Cordiali saluti,<br>lo staff di Decor & Flowers</font>"
+			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Complimenti "&nome&" "&cognome&"! La tua iscrizione a www.buggyrc.it &egrave; avvenuta correttamente.<br>Da adesso potrai ordinare i nostri prodotti senza dover inserire nuovamente i tuoi dati.</font><br>"
+			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Dati sensibili e determinanti per l'accesso ai servizi di www.buggyrc.it:<br>Nome e Cognome: <b>"&nome&" "&cognome&"</b><br>Login: <b>"&email&"</b><br>Password: <b>"&password&"</b><br><br>Cordiali saluti,<br>lo staff di Buggy RC</font>"
 			HTML1 = HTML1 & "</td>"
 			HTML1 = HTML1 & "</tr>"
 			HTML1 = HTML1 & "</table>"
 			HTML1 = HTML1 & "</body>"
 			HTML1 = HTML1 & "</html>"
 
-			Mittente = "info@decorandflowers.it"
+			Mittente = "info@buggyrc.it"
 			Destinatario = email
-			Oggetto = "Iscrizione al sito DecorAndFlowers.it"
+			Oggetto = "Iscrizione al sito Buggyrc.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -142,11 +142,11 @@ if mode=1 then
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -172,23 +172,23 @@ if mode=1 then
 			HTML1 = HTML1 & "<html>"
 			HTML1 = HTML1 & "<head>"
 			HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-			HTML1 = HTML1 & "<title>DecorAndFlowers.it</title>"
+			HTML1 = HTML1 & "<title>Buggyrc.it</title>"
 			HTML1 = HTML1 & "</head>"
 			HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
 			HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
 			HTML1 = HTML1 & "<tr>"
 			HTML1 = HTML1 & "<td>"
 			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Nuova registrazione al sito internet.</font><br>"
-			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Dati sensibili e determinanti per l'accesso ai servizi di www.decorandflowers.it:<br>Nome e Cognome: <b>"&nome&" "&cognome&"</b><br>Login: <b>"&email&"</b><br>Password: <b>"&password&"</b><br>Codice iscritto: <b>"&PkId_iscritto&"</b></font>"
+			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Dati sensibili e determinanti per l'accesso ai servizi di www.buggyrc.it:<br>Nome e Cognome: <b>"&nome&" "&cognome&"</b><br>Login: <b>"&email&"</b><br>Password: <b>"&password&"</b><br>Codice iscritto: <b>"&PkId_iscritto&"</b></font>"
 			HTML1 = HTML1 & "</td>"
 			HTML1 = HTML1 & "</tr>"
 			HTML1 = HTML1 & "</table>"
 			HTML1 = HTML1 & "</body>"
 			HTML1 = HTML1 & "</html>"
 
-			Mittente = "info@decorandflowers.it"
-			Destinatario = "info@decorandflowers.it"
-			Oggetto = "Nuova iscrizione al sito DecorAndFlowers.it"
+			Mittente = "info@buggyrc.it"
+			Destinatario = "info@buggyrc.it"
+			Oggetto = "Nuova iscrizione al sito Buggyrc.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -203,11 +203,11 @@ if mode=1 then
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -215,13 +215,13 @@ if mode=1 then
 			End With
 			Set eMail_cdo.Configuration = myConfig
 
-			eMail_cdo.From = Mittente
-			eMail_cdo.To = Destinatario
-			eMail_cdo.Subject = Oggetto
+			'eMail_cdo.From = Mittente
+			'eMail_cdo.To = Destinatario
+			'eMail_cdo.Subject = Oggetto
 
-			eMail_cdo.HTMLBody = Testo
+			'eMail_cdo.HTMLBody = Testo
 
-			eMail_cdo.Send()
+			'eMail_cdo.Send()
 
 			Set myConfig = Nothing
 			Set eMail_cdo = Nothing
@@ -231,9 +231,9 @@ if mode=1 then
 			'invio al webmaster
 
 
-			Mittente = "info@decorandflowers.it"
+			Mittente = "info@buggyrc.it"
 			Destinatario = "viadeimedici@gmail.com"
-			Oggetto = "Nuova iscrizione al sito DecorAndFlowers.it"
+			Oggetto = "Nuova iscrizione al sito Buggyrc.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -248,11 +248,11 @@ if mode=1 then
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -416,23 +416,23 @@ end if
 			HTML1 = HTML1 & "<html>"
 			HTML1 = HTML1 & "<head>"
 			HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-			HTML1 = HTML1 & "<title>DecorAndFlowers.it</title>"
+			HTML1 = HTML1 & "<title>Buggyrc.it</title>"
 			HTML1 = HTML1 & "</head>"
 			HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
 			HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
 			HTML1 = HTML1 & "<tr>"
 			HTML1 = HTML1 & "<td>"
-			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Spett.le "&nome&" "&cognome&", la password inserita al momento dell'iscrizione a DecorAndFlowers.it &egrave; la seguente:<br><br></font>"
-			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Password: <b>"&password&"</b><br>Login: <b>"&email&"</b><br><br>Cordiali saluti,<br>lo staff di Decor & Flowers</font><br>"
+			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Spett.le "&nome&" "&cognome&", la password inserita al momento dell'iscrizione a Buggyrc.it &egrave; la seguente:<br><br></font>"
+			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Password: <b>"&password&"</b><br>Login: <b>"&email&"</b><br><br>Cordiali saluti,<br>lo staff di Buggy RC</font><br>"
 			HTML1 = HTML1 & "</td>"
 			HTML1 = HTML1 & "</tr>"
 			HTML1 = HTML1 & "</table>"
 			HTML1 = HTML1 & "</body>"
 			HTML1 = HTML1 & "</html>"
 
-			Mittente = "info@decorandflowers.it"
+			Mittente = "info@buggyrc.it"
 			Destinatario = email
-			Oggetto = "Recupero password dal sito DecorAndFlowers.it"
+			Oggetto = "Recupero password dal sito Buggyrc.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -447,11 +447,11 @@ end if
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -478,23 +478,23 @@ end if
 			HTML1 = HTML1 & "<html>"
 			HTML1 = HTML1 & "<head>"
 			HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-			HTML1 = HTML1 & "<title>DecorAndFlowers.it</title>"
+			HTML1 = HTML1 & "<title>Buggyrc.it</title>"
 			HTML1 = HTML1 & "</head>"
 			HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
 			HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
 			HTML1 = HTML1 & "<tr>"
 			HTML1 = HTML1 & "<td>"
-			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>E' stata fatta una richiesta di recupero password dal seguente cliente: "&nome&" "&cognome&"<br> La password inserita al momento dell'iscrizione a DecorAndFlowers.it &egrave; la seguente:<br></font>"
-			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Password: <b>"&password&"</b><br>Login: <b>"&email&"</b><br><br>Cordiali saluti,<br>lo staff di Decor & Flowers</font><br>"
+			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>E' stata fatta una richiesta di recupero password dal seguente cliente: "&nome&" "&cognome&"<br> La password inserita al momento dell'iscrizione a Buggyrc.it &egrave; la seguente:<br></font>"
+			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Password: <b>"&password&"</b><br>Login: <b>"&email&"</b><br><br>Cordiali saluti,<br>lo staff di Buggy RC</font><br>"
 			HTML1 = HTML1 & "</td>"
 			HTML1 = HTML1 & "</tr>"
 			HTML1 = HTML1 & "</table>"
 			HTML1 = HTML1 & "</body>"
 			HTML1 = HTML1 & "</html>"
 
-			Mittente = "info@decorandflowers.it"
-			Destinatario = "info@decorandflowers.it"
-			Oggetto = "Richiesta recupero password dal sito DecorAndFlowers.it"
+			Mittente = "info@buggyrc.it"
+			Destinatario = "info@buggyrc.it"
+			Oggetto = "Richiesta recupero password dal sito Buggyrc.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -509,11 +509,11 @@ end if
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -541,10 +541,9 @@ end if
 <html>
 
 <head>
-    <title>Decor &amp; Flowers</title>
+    <title>Buggy RC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Decor &amp; Flowers.">
-    <meta name="keywords" content="">
+    <meta name="description" content="Iscrizione Buggy RC">
     <!--#include file="inc_head.asp"-->
 		<SCRIPT language="JavaScript">
 
@@ -701,10 +700,10 @@ end if
                     </div>
                     <div class="col-md-12">
 											<%if mode=4 then%>
-												<p class="description"><strong>La password di accesso a DecorAndFlowers.it &egrave; stata inviata regolarmente al tuo indirizzo e-mail:<br><%=email%><br>Controllandolo puoi recuperare i dati di accesso al sito internet.</strong>
+												<p class="description"><strong>La password di accesso a Buggyrc.it &egrave; stata inviata regolarmente al tuo indirizzo e-mail:<br><%=email%><br>Controllandolo puoi recuperare i dati di accesso al sito internet.</strong>
 												</p>
 											<%else%>
-												<p class="description">Se sei gi&agrave; iscritto, puoi richiedere la password inserita al momento della registrazione a DecorAndFlowers.it.<br>
+												<p class="description">Se sei gi&agrave; iscritto, puoi richiedere la password inserita al momento della registrazione a Buggyrc.it.<br>
 				Informazione importante: &egrave; necessario che l'indirizzo <strong>Email</strong> inserito sia lo stesso usato per l'iscrizione. La password ti sar&aacute; inviata automaticamente.
                         </p>
 												<%if errore=5 then%><p><strong>ATTENZIONE! EMAIL ERRATA. RIPROVATE, GRAZIE.</strong></p><%end if%>
@@ -746,7 +745,7 @@ end if
 												<h4><%if pkid>0 then%>Modifica<%else%>Iscriviti<%end if%></h4>
 										</div>
 										<div class="col-md-12">
-												<p class="description">In questa pagina puoi inserire i tuoi dati per registrarti a DecorAndFlowers.it.<br> Informazione importante: &egrave; necessario che l'indirizzo Email sia un'indirizzo funzionante e che usi normalmente, in quanto ti verranno spedite
+												<p class="description">In questa pagina puoi inserire i tuoi dati per registrarti a Buggyrc.it.<br> Informazione importante: &egrave; necessario che l'indirizzo Email sia un'indirizzo funzionante e che usi normalmente, in quanto ti verranno spedite
 														comunicazioni relativamente agli ordini e ai prodotti.<br>Ti ricordiamo inoltre che l'indirizzo Email lo dovrai utilizzare come Login per accedere ai tuoi futuri ordini.
 												</p>
 												<form class="form-horizontal" method="post" action="iscrizione.asp?mode=1&amp;pkid=<%=pkid%>" name="newsform" onSubmit="return verifica();">

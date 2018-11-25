@@ -16,7 +16,7 @@ If Err.Number <> 0 Then
 End IF
 
 'title in tutte le pagine
-TitleAdmin="AdA - Decor & Flowers"
+TitleAdmin="AdA - Buggy RC"
 
 'percorso per i file
 path = "/public/" 'locale/sito
