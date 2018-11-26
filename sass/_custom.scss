@@ -382,6 +382,13 @@ img {
         background-color: darken($body-color, 57) !important;
         font-size: .75em;
         padding: 0;
+        a {
+            color: #fff !important;
+            background-color: darken($body-color, 57) !important;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         a:hover, a:active, a:focus {
             background-color: darken($body-color, 40) !important;
             color: #fff !important;
@@ -391,9 +398,12 @@ img {
         min-height: auto;
         a {
             font-size: .75em;
-            color: #000;
+            color: #fff !important;
             opacity: .75;
             padding: 10px 0;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     }
 }
