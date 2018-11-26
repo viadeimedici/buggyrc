@@ -1094,7 +1094,7 @@ img {
             background-size    : contain;
             background-repeat  : no-repeat;
             background-position: center center;
-            background-color   : lighten($body-color, 20);
+            background-color   : lighten($body-color, 30);
             box-shadow: inset 0 0 2px $body-color;
         }
     }
