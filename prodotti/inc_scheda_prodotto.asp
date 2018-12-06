@@ -1,6 +1,7 @@
-<!--#include virtual="/inc_strConn.asp"-->
+<!--#include virtual="/buggyrc/inc_strConn.asp"-->
 <%
-pkid_prod=id
+pkid_prod=request("pkid_prod")
+'pkid_prod=id
 if pkid_prod="" then pkid_prod=0
 if pkid_prod=0 then response.Redirect("/")
 
@@ -44,9 +45,9 @@ if pkid_prod>0 then
       Description_Cat_1=cat_rs("Description")
       Url_Cat_1=cat_rs("Url")
       if Len(Url_Cat_1)>0 then
-        Url_Cat_1="/categorie-arredo-decorazioni/"&Url_Cat_1
+        Url_Cat_1="/buggyrc/categorie/"&Url_Cat_1
       Else
-        Url_Cat_1="/prodotti.asp?cat_1="&FkCategoria_1
+        Url_Cat_1="/buggyrc/categorie/inc_categorie_1.asp?cat_1="&FkCategoria_1
       end if
     end if
     cat_rs.close
@@ -66,9 +67,9 @@ if pkid_prod>0 then
       Description_Cat_2=sot_rs("Description")
       Url_Cat_2=sot_rs("Url")
       if Len(Url_Cat_2)>0 then
-        Url_Cat_2="/categorie-arredo-decorazioni/"&Url_Cat_2
+        Url_Cat_2="/buggyrc/categorie/"&Url_Cat_2
       Else
-        Url_Cat_2="/prodotti.asp?cat_2="&FkCategoria_2
+        Url_Cat_2="/buggyrc/categorie/inc_categorie_2.asp?cat_2="&FkCategoria_2
       end if
     end if
     sot_rs.close
@@ -103,10 +104,10 @@ if ric="" then ric=0
 <html>
 
 <head>
-    <title><%=Titolo_Prod%> - <%=Titolo_1_Cat_2%> - <%=Titolo_1_Cat_1%> - Decor &amp; Flowers</title>
+    <title><%=Titolo_Prod%> - <%=Titolo_1_Cat_2%> - <%=Titolo_1_Cat_1%> - Buggy RC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="<%=Descrizione_Prod%>, <%=Titolo_Prod%>, <%=Titolo_1_Cat_2%>, <%=Titolo_1_Cat_1%>, Decor &amp; Flowers.">
-    <!--#include virtual="/inc_head.asp"-->
+    <meta name="description" content="<%=Descrizione_Prod%>, <%=Titolo_Prod%>, <%=Titolo_1_Cat_2%>, <%=Titolo_1_Cat_1%>, Buggy RC.">
+    <!--#include virtual="/buggyrc/inc_head.asp"-->
     <SCRIPT language="JavaScript">
 			function Verifica() {
 
@@ -118,9 +119,9 @@ if ric="" then ric=0
 </head>
 
 <body>
-  <!--#include virtual="/inc_header_1.asp"-->
+  <!--#include virtual="/buggyrc/inc_header_1.asp"-->
     <div id="block-main" class="block-main">
-        <!--#include virtual="/inc_header_2.asp"-->
+        <!--#include virtual="/buggyrc/inc_header_2.asp"-->
     </div>
     <div class="container content">
         <div class="row clearfix">
@@ -137,7 +138,7 @@ if ric="" then ric=0
 			</div>
 		</div>
         <div class="top-buffer hidden-md hidden-lg"></div>
-        <!--#include virtual="/inc_menu.asp"-->
+        <!--#include virtual="/buggyrc/inc_menu.asp"-->
 
         <div class="col-md-9">
             <div class="row">
@@ -193,8 +194,8 @@ if ric="" then ric=0
                             <div class="row">
                                 <%
                                 Do While Not img_rs.EOF
-                                img_thumb="https://www.decorandflowers.it/public/thumb/"&NoLettAcc(img_rs("File"))
-                                img_zoom="https://www.decorandflowers.it/public/"&NoLettAcc(img_rs("Zoom"))
+                                img_thumb="https://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
+                                img_zoom="https://www.buggyrc.it/public/"&NoLettAcc(img_rs("Zoom"))
                                 img_titolo=img_rs("Titolo")
                                 %>
                                 <div class="col-sm-3 col-xs-6">
@@ -238,11 +239,11 @@ if ric="" then ric=0
                             <tbody>
                                 <%
                                 Do while not var_rs.EOF
-                                img_thumb="https://www.decorandflowers.it/public/thumb/"&NoLettAcc(var_rs("Img"))
-                                img_zoom="https://www.decorandflowers.it/public/"&NoLettAcc(var_rs("Img"))
+                                img_thumb="https://www.buggyrc.it/public/thumb/"&NoLettAcc(var_rs("Img"))
+                                img_zoom="https://www.buggyrc.it/public/"&NoLettAcc(var_rs("Img"))
                                 pezzi=var_rs("Pezzi")
                                 if pezzi="" or IsNull(pezzi) then pezzi=0
-                                
+
                                 'modifica per interrompere il carrello'
                                 pezzi=0
 
@@ -304,6 +305,6 @@ if ric="" then ric=0
             </div>
         </div>
     </div>
-    <!--#include virtual="/inc_footer.asp"-->
+    <!--#include virtual="/buggyrc/inc_footer.asp"-->
 </body>
-<!--#include virtual="/inc_strClose.asp"-->
+<!--#include virtual="/buggyrc/inc_strClose.asp"-->

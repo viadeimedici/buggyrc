@@ -20,15 +20,15 @@
 <meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
-<link href="stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css">
-<link href="stylesheets/customization.css" rel="stylesheet" type="text/css" shim-shadowdom>
-<link href="stylesheets/camera.css" rel="stylesheet" type="text/css" shim-shadowdom>
+<link href="/buggyrc/stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/buggyrc/stylesheets/customization.css" rel="stylesheet" type="text/css" shim-shadowdom>
+<link href="/buggyrc/stylesheets/camera.css" rel="stylesheet" type="text/css" shim-shadowdom>
 <!--[if lt IE 9]><script src="javascripts/html5shiv.js"></script><![endif]-->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cabin:300,300i,600" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,600" rel="stylesheet">
-<link href="stylesheets/jquery.fancybox.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/buggyrc/stylesheets/jquery.fancybox.min.css" media="screen" rel="stylesheet" type="text/css">
 <style type="text/css">
     .clearfix:after {
         content: ".";

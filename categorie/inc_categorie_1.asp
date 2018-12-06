@@ -1,6 +1,7 @@
-<!--#include virtual="/inc_strConn.asp"-->
+<!--#include virtual="/buggyrc/inc_strConn.asp"-->
 <%
-cat_1=id
+cat_1=request("cat_1")
+'cat_1=id
 if cat_1="" then cat_1=0
 if cat_1=0 then response.Redirect("/")
 
@@ -34,21 +35,21 @@ end if
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="<%=Left(TogliTAG(descrizione_pagina), 500)%> - Decor &amp; Flowers.">
     <meta name="keywords" content="">
-    <!--#include virtual="/inc_head.asp"-->
-    <link rel="canonical" href="https://www.decorandflowers.it/categorie-arredo-decorazioni/<%=toUrl%>" />
+    <!--#include virtual="/buggyrc/inc_head.asp"-->
+    <link rel="canonical" href="https://www.buggyrc.it/categorie/<%=toUrl%>" />
 </head>
 
 <body>
-  <!--#include virtual="/inc_header_1.asp"-->
+  <!--#include virtual="/buggyrc/inc_header_1.asp"-->
     <div id="block-main" class="block-main">
-        <!--#include virtual="/inc_header_2.asp"-->
+        <!--#include virtual="/buggyrc/inc_header_2.asp"-->
     </div>
     <div class="container content">
         <ol class="breadcrumb">
             <li><a href="/">Home</a></li>
             <li class="active"><%=titolo_pagina%></li>
         </ol>
-        <!--#include virtual="/inc_menu.asp"-->
+        <!--#include virtual="/buggyrc/inc_menu.asp"-->
         <div class="col-md-9">
             <div class="row">
                 <div class="col-md-12">
@@ -107,11 +108,11 @@ end if
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li> <p class="navbar-text">prezzo</p></li>
-                                    <li <%if order=4 then%>class="active"<%end if%>><a href="/categorie-arredo-decorazioni/<%=toUrl%>?order=4"><i class="glyphicon glyphicon-eur"></i> + </a></li>
-                                    <li <%if order=3 then%>class="active"<%end if%>><a href="/categorie-arredo-decorazioni/<%=toUrl%>?order=3"><i class="glyphicon glyphicon-eur"></i> - </a></li>
+                                    <li <%if order=4 then%>class="active"<%end if%>><a href="/categorie/<%=toUrl%>?order=4"><i class="glyphicon glyphicon-eur"></i> + </a></li>
+                                    <li <%if order=3 then%>class="active"<%end if%>><a href="/categorie/<%=toUrl%>?order=3"><i class="glyphicon glyphicon-eur"></i> - </a></li>
                                     <li><p class="navbar-text">ordine alfabetico</p></li>
-                                    <li <%if order=1 then%>class="active"<%end if%>><a href="/categorie-arredo-decorazioni/<%=toUrl%>?order=1">A/Z</a></li>
-                                    <li <%if order=2 then%>class="active"<%end if%>><a href="/categorie-arredo-decorazioni/<%=toUrl%>?order=2">Z/A</a></li>
+                                    <li <%if order=1 then%>class="active"<%end if%>><a href="/categorie/<%=toUrl%>?order=1">A/Z</a></li>
+                                    <li <%if order=2 then%>class="active"<%end if%>><a href="/categorie/<%=toUrl%>?order=2">Z/A</a></li>
 
                                 </ul>
                             </div>
@@ -131,16 +132,16 @@ end if
                 if PrezzoOfferta="" or IsNull(PrezzoOfferta) then PrezzoOfferta=0
                 Url_Prod=pro_rs("Url")
                 If Len(Url_Prod)>0 then
-                  Url_Prod="/prodotti-arredo-decorazioni/"&Url_Prod
+                  Url_Prod="/buggyrc/prodotti/"&Url_Prod
                 Else
-                  Url_Prod="/scheda.asp?pkid_prod="&Pkid_Prod
+                  Url_Prod="/buggyrc/prodotti/scheda.asp?pkid_prod="&Pkid_Prod
                 End If
 
                 Set img_rs=Server.CreateObject("ADODB.Recordset")
                 sql = "SELECT TOP 1 * FROM Immagini WHERE FkContenuto="&Pkid_Prod&" and Tabella='Prodotti_Madre' ORDER BY Posizione ASC"
                 img_rs.Open sql, conn, 1, 1
                 if img_rs.recordcount>0 then
-                  img="https://www.decorandflowers.it/public/thumb/"&NoLettAcc(img_rs("File"))
+                  img="https://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
                 else
                   img=""
                 end if
@@ -188,7 +189,7 @@ end if
             </div>
         </div>
     </div>
-    <!--#include virtual="/inc_footer.asp"-->
+    <!--#include virtual="/buggyrc/inc_footer.asp"-->
     <script>
         $(document).ready(function() {
             $('.readmore').readmore({
@@ -203,4 +204,4 @@ end if
         });
     </script>
 </body>
-<!--#include virtual="/inc_strClose.asp"-->
+<!--#include virtual="/buggyrc/inc_strClose.asp"-->
