@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /App_Data/
+Disallow: /aspnet_client/
+Disallow: /cgi-bin/
+Disallow: /mdb-database/
+Disallow: /pagamento_paypal_ko.asp
+Disallow: /pagamento_paypal_ok.asp
+Disallow: /carrello1.asp
+Disallow: /carrello2.asp
+Disallow: /carrello3.asp
+Disallow: /ordine.asp
+Disallow: /ordini_elenco.asp
+Disallow: /404.asp
+

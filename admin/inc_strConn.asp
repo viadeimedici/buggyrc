@@ -6,7 +6,7 @@ On Error Resume Next
 
 	'database
 	Set conn = Server.CreateObject("ADODB.Connection")
-	conn.open = "Provider = SQLOLEDB; Data Source = 62.149.153.43; Database = MSSql142868; User ID = MSSql142868; Password=7lq95l1f76"
+	conn.open = "Provider = SQLOLEDB; Data Source = 62.149.153.37; Database = MSSql172957; User ID = MSSql172957; Password=5t7444b7u1"
 
 	'Set conn2 = Server.CreateObject("ADODB.Connection")
 		'conn2.open = "Provider = SQLOLEDB; Data Source = 62.149.153.43; Database = MSSql142868; User ID = MSSql142868; Password=7lq95l1f76"
@@ -24,7 +24,7 @@ path = "/public/" 'locale/sito
 
 'percorso per l'editor
 'path_editor = "/admin/ckeditor/" 'locale/sito
-path_editor = "/buggyrc/admin/ckeditor/" 'demo
+path_editor = "/admin/ckeditor/" 'demo
 
 
 Function NoLettAcc(strInput)
