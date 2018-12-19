@@ -6,10 +6,10 @@ Response.Expires = -1500
 On Error Resume Next
 
 	Set conn = Server.CreateObject("ADODB.Connection")
-  conn.open = "Provider = SQLOLEDB; Data Source = 62.149.153.43; Database = MSSql142868; User ID = MSSql142868; Password=7lq95l1f76"
+  conn.open = "Provider = SQLOLEDB; Data Source = 62.149.153.37; Database = MSSql172957; User ID = MSSql172957; Password=5t7444b7u1"
 
-	path_img="d:\inetpub\webs\decorandflowersit\public\"
-	path_thumb="d:\inetpub\webs\decorandflowersit\public\thumb\"
+	path_img="d:\inetpub\webs\buggyrcit\public\"
+	path_thumb="d:\inetpub\webs\buggyrcit\public\thumb\"
 
 	fromURL = Request.ServerVariables("HTTP_REFERER")
 	toUrl_completo = Request.ServerVariables("SCRIPT_NAME")

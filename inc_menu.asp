@@ -14,7 +14,7 @@
             Titolo_1_Cat_1_menu=cat_rs("Titolo_1")
             Url_Cat_1_menu=cat_rs("Url")
             if Len(Url_Cat_1_menu)>0 then
-              Url_Cat_1_menu="/categorie-arredo-decorazioni/"&Url_Cat_1_menu
+              Url_Cat_1_menu="/categorie/"&Url_Cat_1_menu
             Else
               Url_Cat_1_menu="/prodotti.asp?cat_1="&Pkid_Cat_1_menu
             end if
@@ -43,7 +43,7 @@
                         Titolo_1_Cat_2_menu=sot_rs("Titolo_1")
                         Url_Cat_2_menu=sot_rs("Url")
                         if Len(Url_Cat_2_menu)>0 then
-                          Url_Cat_2_menu="/categorie-arredo-decorazioni/"&Url_Cat_2_menu
+                          Url_Cat_2_menu="/categorie/"&Url_Cat_2_menu
                         Else
                           Url_Cat_2_menu="/prodotti.asp?cat_2="&Pkid_Cat_2_menu
                         end if
@@ -84,7 +84,7 @@
             Titolo_1_Eve_menu=eve_rs("Titolo_1")
             Url_Eve_menu=eve_rs("Url")
             if Len(Url_Eve_menu)>0 then
-              Url_Eve_menu="/categorie-arredo-decorazioni/"&Url_Eve_menu
+              Url_Eve_menu="/categorie/"&Url_Eve_menu
             Else
               Url_Eve_menu="/prodotti_eventi.asp?eve="&Pkid_Eve_menu
             end if

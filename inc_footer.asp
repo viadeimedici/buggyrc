@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 address-col">
-                <img src="images/logo_v3_footer.png" alt="Decor & Flowers" style="width: 100%; padding-bottom: 15px;"/>
+                <img src="images/logo_v3_footer.png" alt="Buggy RC" style="width: 100%; padding-bottom: 15px;"/>
                 <p>
                     BuggyRc.it è un marchio di<br />Decorandflowers<br>
                     C.F. e Iscr. Reg. Impr. di Firenze 06741510488<br />
@@ -204,7 +204,7 @@ $(document).ready(function() {
   <%if ric=1 and pkid_prodotto_figlio=pkid_prodotto_figlio_email then%>
     <div style="display: none; max-width: 800px;" id="hidden-response-<%=pkid_prodotto_figlio%>">
     <h4>Richiesta informazioni e disponibilit&agrave; per<br /><b><%=Titolo_Prod%></b><br />Codice prodotto: <%=Codice_Prod%> - Variante: <%=var_rs("Codice")%></h4>
-    <p><strong>La richiesta &egrave; stata inoltrata correttamente, il nostro staff ti contatter&agrave; il prima possibile.<br />Saluti da DecorAndFlowers.it</strong></p>
+    <p><strong>La richiesta &egrave; stata inoltrata correttamente, il nostro staff ti contatter&agrave; il prima possibile.<br />Saluti da BuggyRC.it</strong></p>
   <%else%>
     <div style="display: none; max-width: 800px;" id="hidden-content-<%=pkid_prodotto_figlio%>">
         <h4>Richiesta informazioni e disponibilit&agrave; per<br /><b><%=Titolo_Prod%></b><br />Codice prodotto: <%=Codice_Prod%> - Variante: <%=var_rs("Codice")%></h4>
@@ -274,7 +274,7 @@ $(document).ready(function() {
     HTML1 = HTML1 & "<html>"
     HTML1 = HTML1 & "<head>"
     HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-    HTML1 = HTML1 & "<title>DecorAndFlowers.it</title>"
+    HTML1 = HTML1 & "<title>BuggyRC.it</title>"
     HTML1 = HTML1 & "</head>"
     HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
     HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
@@ -292,8 +292,8 @@ $(document).ready(function() {
     HTML1 = HTML1 & "</body>"
     HTML1 = HTML1 & "</html>"
 
-    Mittente = "info@decorandflowers.it"
-    Destinatario = "info@decorandflowers.it"
+    Mittente = "info@buggyrc.it"
+    Destinatario = "info@buggyrc.it"
     Oggetto = "Richiesta informazioni su un prodotto dal sito internet"
     Testo = HTML1
 
@@ -309,11 +309,11 @@ $(document).ready(function() {
       ' Timeout
       .Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
       ' Server SMTP di uscita
-      .Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+      .Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
       ' Porta SMTP
       .Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
       'Username
-      .Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+      .Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
       'Password
       .Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -337,7 +337,7 @@ $(document).ready(function() {
     'invio al webmaster
 
 
-    Mittente = "info@decorandflowers.it"
+    Mittente = "info@buggyrc.it"
     Destinatario = "viadeimedici@gmail.com"
     Oggetto = "Richiesta informazioni su un prodotto dal sito internet"
     Testo = HTML1
@@ -354,11 +354,11 @@ $(document).ready(function() {
       ' Timeout
       .Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
       ' Server SMTP di uscita
-      .Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+      .Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
       ' Porta SMTP
       .Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
       'Username
-      .Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+      .Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
       'Password
       .Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 

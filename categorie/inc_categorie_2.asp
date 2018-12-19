@@ -53,12 +53,12 @@ end if
 <html>
 
 <head>
-    <title><%=Title_Cat_2%> - Decor &amp; Flowers</title>
+    <title><%=Title_Cat_2%> - Buggy RC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="<%=Left(TogliTAG(descrizione_pagina), 500)%> - Decor &amp; Flowers.">
+    <meta name="description" content="<%=Left(TogliTAG(descrizione_pagina), 500)%> - Buggy RC.">
     <meta name="keywords" content="">
     <!--#include virtual="/inc_head.asp"-->
-    <link rel="canonical" href="https://www.decorandflowers.it/categorie-arredo-decorazioni/<%=toUrl%>" />
+    <link rel="canonical" href="http://www.buggyrc.it/categorie/<%=toUrl%>" />
 </head>
 
 <body>
@@ -131,11 +131,11 @@ end if
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li> <p class="navbar-text">prezzo</p></li>
-                                    <li <%if order=4 then%>class="active"<%end if%>><a href="/categorie-arredo-decorazioni/<%=toUrl%>?order=4"><i class="glyphicon glyphicon-eur"></i> + </a></li>
-                                    <li <%if order=3 then%>class="active"<%end if%>><a href="/categorie-arredo-decorazioni/<%=toUrl%>?order=3"><i class="glyphicon glyphicon-eur"></i> - </a></li>
+                                    <li <%if order=4 then%>class="active"<%end if%>><a href="/categorie/<%=toUrl%>?order=4"><i class="glyphicon glyphicon-eur"></i> + </a></li>
+                                    <li <%if order=3 then%>class="active"<%end if%>><a href="/categorie/<%=toUrl%>?order=3"><i class="glyphicon glyphicon-eur"></i> - </a></li>
                                     <li><p class="navbar-text">ordine alfabetico</p></li>
-                                    <li <%if order=1 then%>class="active"<%end if%>><a href="/categorie-arredo-decorazioni/<%=toUrl%>?order=1">A/Z</a></li>
-                                    <li <%if order=2 then%>class="active"<%end if%>><a href="/categorie-arredo-decorazioni/<%=toUrl%>?order=2">Z/A</a></li>
+                                    <li <%if order=1 then%>class="active"<%end if%>><a href="/categorie/<%=toUrl%>?order=1">A/Z</a></li>
+                                    <li <%if order=2 then%>class="active"<%end if%>><a href="/categorie/<%=toUrl%>?order=2">Z/A</a></li>
 
                                 </ul>
                             </div>
@@ -155,7 +155,7 @@ end if
                 if PrezzoOfferta="" or IsNull(PrezzoOfferta) then PrezzoOfferta=0
                 Url_Prod=pro_rs("Url")
                 If Len(Url_Prod)>0 then
-                  Url_Prod="/prodotti-arredo-decorazioni/"&Url_Prod
+                  Url_Prod="/prodotti/"&Url_Prod
                 Else
                   Url_Prod="/scheda.asp?pkid_prod="&Pkid_Prod
                 End If
@@ -164,7 +164,7 @@ end if
                 sql = "SELECT TOP 1 * FROM Immagini WHERE FkContenuto="&Pkid_Prod&" and Tabella='Prodotti_Madre' ORDER BY Posizione ASC"
                 img_rs.Open sql, conn, 1, 1
                 if img_rs.recordcount>0 then
-                  img="https://www.decorandflowers.it/public/thumb/"&NoLettAcc(img_rs("File"))
+                  img="http://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
                 else
                   img=""
                 end if

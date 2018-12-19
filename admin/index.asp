@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>AdA - Decor & Flowers</title>
+<title>AdA - Buggy RC</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link href="admin.css" rel="stylesheet" type="text/css">
 </head>
@@ -14,29 +14,29 @@
 	mode=request("mode")
 	if mode="" then mode=0
 	if mode=1 then
-	
+
 		login = Request.form("username")
 		lg1=InStr(login, "'")
 		if lg1>0 then
-			login=Replace(login, "'", " ")	
+			login=Replace(login, "'", " ")
 			'response.End()
 		end if
 		lg2=InStr(login, "&")
 		if lg2>0 then
-			login=Replace(login, "&", " ")	
+			login=Replace(login, "&", " ")
 			'response.End()
 		end if
 		login=Trim(login)
-		
+
 		password = Request.form("Password")
 		pw1=InStr(password, "'")
 		if pw1>0 then
-			password=Replace(password, "'", " ")	
+			password=Replace(password, "'", " ")
 			'response.End()
 		end if
 		pw2=InStr(password, "&")
 		if pw2>0 then
-			password=Replace(password, "&", " ")	
+			password=Replace(password, "&", " ")
 			'response.End()
 		end if
 		password=Trim(password)
@@ -47,27 +47,27 @@
 			Session("idAmministratore") = 1000
 			Session("nickAmministratore") = ""
 			'Session("Permission") = 1	'vede gli amministratori
-			Response.Redirect("admin.asp")	
+			Response.Redirect("admin.asp")
 		end if
-			 
+
 		Set rs = Server.CreateObject("ADODB.Recordset")
 		sql = "SELECT * FROM Amministratori WHERE Username='" & login & "' AND Password='" & password & "'"
 		rs.open sql,conn,1,1
 		num=rs.recordcount
-		
+
 		if num=1 then
 			idsession=rs("pkid")
 			Nominativo=rs("Nominativo")
-			
+
 			Session("idAmministratore") = idsession
 			Session("nickAmministratore") = Nominativo
 			'Session("Permission") = livello
-		
+
 			rs.close
 			set rs = nothing
 	%>
 		<!--#include file="inc_strClose.asp"-->
-		<%	
+		<%
 			Response.Redirect("admin.asp")
 		else
 			mode=2

@@ -170,7 +170,7 @@ return confirm("Si � sicuri di voler eliminare questo FILE?");
 										%>
                         <tr>
 												<%end if%>
-												<td align="center" style="border-bottom: 1px solid #eeeeee;"><img src="https://www.decorandflowers.it/public/thumb/<%=pps("File")%>" align="absmiddle" style="padding-bottom: 10px;" height="150px" /><br ><input name="Img" type="radio" value="<%=pps("File")%>" <%if rs("Img")=pps("File") then%> checked="checked"<%end if%> /></td>
+												<td align="center" style="border-bottom: 1px solid #eeeeee;"><img src="http://www.buggyrc.it/public/thumb/<%=pps("File")%>" align="absmiddle" style="padding-bottom: 10px;" height="150px" /><br ><input name="Img" type="radio" value="<%=pps("File")%>" <%if rs("Img")=pps("File") then%> checked="checked"<%end if%> /></td>
 												<%If((conta Mod 3)=2) then%>
 		                  </tr>
 		                  <tr> </tr>

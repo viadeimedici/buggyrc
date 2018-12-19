@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row no-gutters">
         <div class="col-xs-12 col-sm-4" style="text-align: center">
-            <a class="header-logo-v3" href="https://www.buggyrc.it">Buggy RC</a>
+            <a class="header-logo-v3" href="http://www.buggyrc.it">Buggy RC</a>
         </div>
         <SCRIPT language="JavaScript">
 
@@ -45,7 +45,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav nav-justified main-menu hidden visible-xs">
-                <li class="nav-user visible-xs"><a href="https://www.buggyrc.it">Home</a></li>
+                <li class="nav-user visible-xs"><a href="http://www.buggyrc.it">Home</a></li>
                 <li class="nav-user dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Prodotti <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                     <ul class="dropdown-menu">
                         <li>

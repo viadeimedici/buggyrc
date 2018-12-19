@@ -41,16 +41,16 @@
                   Titolo_1_Cat_1=cat_rs("Titolo_1")
                   Url_Cat_1=cat_rs("Url")
                   if Len(Url_Cat_1)>0 then
-                    Url_Cat_1="/buggyrc/categorie/"&Url_Cat_1
+                    Url_Cat_1="/categorie/"&Url_Cat_1
                   Else
-                    Url_Cat_1="/buggyrc/categorie/inc_categorie_1.asp?cat_1="&Pkid_Cat_1
+                    Url_Cat_1="/categorie/inc_categorie_1.asp?cat_1="&Pkid_Cat_1
                   end if
 
                   Set img_rs=Server.CreateObject("ADODB.Recordset")
                   sql = "SELECT TOP 1 * FROM Immagini WHERE FkContenuto="&Pkid_Cat_1&" and Tabella='Categorie_1' ORDER BY Posizione ASC"
                   img_rs.Open sql, conn, 1, 1
                   if img_rs.recordcount>0 then
-                    img="https://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
+                    img="http://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
                   else
                     img="images/thumb_d&f.png"
                   end if
@@ -109,16 +109,16 @@
                   if PrezzoOfferta="" or IsNull(PrezzoOfferta) then PrezzoOfferta=0
                   Url_Prod=pro_rs("Url")
                   If Len(Url_Prod)>0 then
-                    Url_Prod="/buggyrc/prodotti/"&Url_Prod
+                    Url_Prod="/prodotti/"&Url_Prod
                   Else
-                    Url_Prod="/buggyrc/prodotti/inc_scheda_prodotto.asp?pkid_prod="&Pkid_Prod
+                    Url_Prod="/prodotti/inc_scheda_prodotto.asp?pkid_prod="&Pkid_Prod
                   End If
 
                   Set img_rs=Server.CreateObject("ADODB.Recordset")
       						sql = "SELECT TOP 1 * FROM Immagini WHERE FkContenuto="&Pkid_Prod&" and Tabella='Prodotti_Madre' ORDER BY Posizione ASC"
       						img_rs.Open sql, conn, 1, 1
       						if img_rs.recordcount>0 then
-                    img="https://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
+                    img="http://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
                   else
                     img="images/thumb_d&f.png"
                   end if
@@ -189,9 +189,9 @@
                   if PrezzoOfferta="" or IsNull(PrezzoOfferta) then PrezzoOfferta=0
                   Url_Prod=pro_rs("Url")
                   If Len(Url_Prod)>0 then
-                    Url_Prod="/buggyrc/prodotti/"&Url_Prod
+                    Url_Prod="/prodotti/"&Url_Prod
                   Else
-                    Url_Prod="/buggyrc/prodotti/inc_scheda_prodotto.asp?pkid_prod="&Pkid_Prod
+                    Url_Prod="/prodotti/inc_scheda_prodotto.asp?pkid_prod="&Pkid_Prod
                   End If
 
                   'Set pro_rs=Server.CreateObject("ADODB.Recordset")
@@ -234,7 +234,7 @@
           						sql = "SELECT TOP 1 * FROM Immagini WHERE FkContenuto="&Pkid_Prod&" and Tabella='Prodotti_Madre' ORDER BY Posizione ASC"
           						img_rs.Open sql, conn, 1, 1
           						if img_rs.recordcount>0 then
-                        img="https://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
+                        img="http://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
                       else
                         img="images/thumb_d&f.png"
                       end if
@@ -308,16 +308,16 @@
                   if PrezzoOfferta="" or IsNull(PrezzoOfferta) then PrezzoOfferta=0
                   Url_Prod=pro_rs("Url")
                   If Len(Url_Prod)>0 then
-                    Url_Prod="/buggyrc/prodotti/"&Url_Prod
+                    Url_Prod="/prodotti/"&Url_Prod
                   Else
-                    Url_Prod="/buggyrc/prodotti/inc_scheda_prodotto.asp?pkid_prod="&Pkid_Prod
+                    Url_Prod="/prodotti/inc_scheda_prodotto.asp?pkid_prod="&Pkid_Prod
                   End If
 
                   Set img_rs=Server.CreateObject("ADODB.Recordset")
       						sql = "SELECT TOP 1 * FROM Immagini WHERE FkContenuto="&Pkid_Prod&" and Tabella='Prodotti_Madre' ORDER BY Posizione ASC"
       						img_rs.Open sql, conn, 1, 1
       						if img_rs.recordcount>0 then
-                    img="https://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
+                    img="http://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
                   else
                     img="images/thumb_d&f.png"
                   end if
