@@ -1,7 +1,7 @@
 <!--#include virtual="/inc_strConn.asp"-->
 <%
-pkid_prod=request("pkid_prod")
-'pkid_prod=id
+'pkid_prod=request("pkid_prod")
+pkid_prod=id
 if pkid_prod="" then pkid_prod=0
 if pkid_prod=0 then response.Redirect("/")
 

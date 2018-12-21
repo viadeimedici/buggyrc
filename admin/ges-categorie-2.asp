@@ -12,38 +12,38 @@ voce_p="Categorie Liv.2"
 'sql = sql + "FROM Categorie_2 "
 'nrs.Open sql, conn, 3, 3
 'if nrs.recordcount>0 then
-	'Do While not nrs.EOF
-		'PkId=nrs("PkId")
-		'Titolo_1=nrs("Titolo_1")
-		'FkCategoria_1=nrs("FkCategoria_1")
-		'if FkCategoria_1>0 then
-			'Set cs=Server.CreateObject("ADODB.Recordset")
-			'sql = "SELECT * FROM Categorie_1 WHERE PkId="&FkCategoria_1
-			'cs.Open sql, conn, 1, 1
-			'if cs.recordcount>0 Then
-			'Titolo_1_Cat1=cs("Titolo_1")
-			'End If
-			'cs.close
-		'end if
-		'if Len(Titolo_1_Cat1)>0 Then
-			'Titolo_1=Titolo_1&" "&Titolo_1_Cat1
-		'end if
-		'Url=ConvertiTitoloInNomeScript(Titolo_1, PkId, "C2")
-		'Set FSO = CreateObject("Scripting.FileSystemObject")
-		'Set Documento = FSO.OpenTextFile(Server.MapPath("/categorie-arredo-decorazioni/") & "\" & Url, 2, True)
-		'ContenutoFile = ""
-		'ContenutoFile = ContenutoFile & "<" & "%" & vbCrLf
-		'ContenutoFile = ContenutoFile & "id = "& PkId &"" & vbCrLf
-		'ContenutoFile = ContenutoFile & "%" & ">" & vbCrLf
-		'ContenutoFile = ContenutoFile & "<!--#include file=""inc_categorie_2.asp""-->"
-		'Documento.Write ContenutoFile
-		'Set Documento = Nothing
-		'Set FSO = Nothing
+'	Do While not nrs.EOF
+'		PkId=nrs("PkId")
+'		Titolo_1=nrs("Titolo_1")
+'		FkCategoria_1=nrs("FkCategoria_1")
+'		if FkCategoria_1>0 then
+'			Set cs=Server.CreateObject("ADODB.Recordset")
+'			sql = "SELECT * FROM Categorie_1 WHERE PkId="&FkCategoria_1
+'			cs.Open sql, conn, 1, 1
+'			if cs.recordcount>0 Then
+'			Titolo_1_Cat1=cs("Titolo_1")
+'			End If
+'			cs.close
+'		end if
+'		if Len(Titolo_1_Cat1)>0 Then
+'			Titolo_1=Titolo_1&" "&Titolo_1_Cat1
+'		end if
+'		Url=ConvertiTitoloInNomeScript(Titolo_1, PkId, "C2")
+'		Set FSO = CreateObject("Scripting.FileSystemObject")
+'		Set Documento = FSO.OpenTextFile(Server.MapPath("/categorie/") & "\" & Url, 2, True)
+'		ContenutoFile = ""
+'		ContenutoFile = ContenutoFile & "<" & "%" & vbCrLf
+'		ContenutoFile = ContenutoFile & "id = "& PkId &"" & vbCrLf
+'		ContenutoFile = ContenutoFile & "%" & ">" & vbCrLf
+'		ContenutoFile = ContenutoFile & "<!--#include file=""inc_categorie_2.asp""-->"
+'		Documento.Write ContenutoFile
+'		Set Documento = Nothing
+'		Set FSO = Nothing
 
-		'nrs("Url")=Url
-		'nrs.update
-	'nrs.movenext
-	'loop
+'		nrs("Url")=Url
+'		nrs.update
+'	nrs.movenext
+'	loop
 'end if
 'nrs.close
 

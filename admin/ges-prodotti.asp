@@ -13,32 +13,32 @@ voce_p="Prodotti"
 'sql = sql + "FROM Prodotti_Madre "
 'nrs.Open sql, conn, 3, 3
 'if nrs.recordcount>0 then
-		'Do While not nrs.EOF
-		'PkId=nrs("PkId")
-		'Titolo=nrs("Titolo")
-		'Url=ConvertiTitoloInNomeScript(Titolo, PkId, "PR")
-		'Set FSO = CreateObject("Scripting.FileSystemObject")
-		'Set Documento = FSO.OpenTextFile(Server.MapPath("/prodotti-arredo-decorazioni/") & "\" & Url, 2, True)
-		'ContenutoFile = ""
-		'ContenutoFile = ContenutoFile & "<" & "%" & vbCrLf
-		'ContenutoFile = ContenutoFile & "id = "& PkId &"" & vbCrLf
-		'ContenutoFile = ContenutoFile & "%" & ">" & vbCrLf
-		'ContenutoFile = ContenutoFile & "<!--#include file=""inc_scheda_prodotto.asp""-->"
-		'Documento.Write ContenutoFile
-		'Set Documento = Nothing
-		'Set FSO = Nothing
+'		Do While not nrs.EOF
+'		PkId=nrs("PkId")
+'		Titolo=nrs("Titolo")
+'		Url=ConvertiTitoloInNomeScript(Titolo, PkId, "PR")
+'		Set FSO = CreateObject("Scripting.FileSystemObject")
+'		Set Documento = FSO.OpenTextFile(Server.MapPath("/prodotti/") & "\" & Url, 2, True)
+'		ContenutoFile = ""
+'		ContenutoFile = ContenutoFile & "<" & "%" & vbCrLf
+'		ContenutoFile = ContenutoFile & "id = "& PkId &"" & vbCrLf
+'		ContenutoFile = ContenutoFile & "%" & ">" & vbCrLf
+'		ContenutoFile = ContenutoFile & "<!--#include file=""inc_scheda_prodotto.asp""-->"
+'		Documento.Write ContenutoFile
+'		Set Documento = Nothing
+'		Set FSO = Nothing
 
-		'nrs("Url")=Url
+'		nrs("Url")=Url
 
-		'nrs("InEvidenza")=0
-		'nrs("InEvidenza_Da")=Null
-		'nrs("InEvidenza_A")=Null
-		'nrs("InEvidenza_A")="31/12/2049 23:59:00"
-		'nrs("InEvidenza_Posizione")=100
+'		nrs("InEvidenza")=0
+'		nrs("InEvidenza_Da")=Null
+'		nrs("InEvidenza_A")=Null
+'		nrs("InEvidenza_A")="31/12/2049 23:59:00"
+'		nrs("InEvidenza_Posizione")=100
 
-		'nrs.update
-	'nrs.movenext
-	'loop
+'		nrs.update
+'	nrs.movenext
+'	loop
 'end if
 'nrs.close
 

@@ -114,8 +114,8 @@ voce_p="Prodotti"
 				Url=Url_New
 				'elimino Url_old
 				Set FSO = CreateObject("Scripting.FileSystemObject")
-				If FSO.FileExists(Server.MapPath("/prodotti-arredo-decorazioni/") & "\" & Url_Old) Then
-					Set Documento = FSO.GetFile(Server.MapPath("/prodotti-arredo-decorazioni/") & "\" & Url_Old)
+				If FSO.FileExists(Server.MapPath("/prodotti/") & "\" & Url_Old) Then
+					Set Documento = FSO.GetFile(Server.MapPath("/prodotti/") & "\" & Url_Old)
 					Documento.Delete
 					Set Documento = Nothing
 				End If
@@ -129,7 +129,7 @@ voce_p="Prodotti"
 		'response.Write("creo_pag:"&creo_pag)
 		if creo_pag="OK" then
 			Set FSO = CreateObject("Scripting.FileSystemObject")
-			Set Documento = FSO.OpenTextFile(Server.MapPath("/prodotti-arredo-decorazioni/") & "\" & Url, 2, True)
+			Set Documento = FSO.OpenTextFile(Server.MapPath("/prodotti/") & "\" & Url, 2, True)
 			ContenutoFile = ""
 			ContenutoFile = ContenutoFile & "<" & "%" & vbCrLf
 			ContenutoFile = ContenutoFile & "id = "& PkId &"" & vbCrLf

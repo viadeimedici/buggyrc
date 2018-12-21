@@ -55,7 +55,7 @@ voce_p="Categorie Liv.1"
 		Url_old=rs("Url")
 		Url_new = request("Url")
 		creo_pag=""
-		'percorso_categorie="\categorie-arredo-decorazioni\"
+		'percorso_categorie="\categorie\"
 
 		if (Len(Url_old)=0 or isNull(Url_old)) and Len(Url_New)=0 then
 			'costrusici url
@@ -77,8 +77,8 @@ voce_p="Categorie Liv.1"
 				Url=Url_New
 				'elimino Url_old
 				Set FSO = CreateObject("Scripting.FileSystemObject")
-				If FSO.FileExists(Server.MapPath("/categorie-arredo-decorazioni/") & "\" & Url_Old) Then
-					Set Documento = FSO.GetFile(Server.MapPath("/categorie-arredo-decorazioni/") & "\" & Url_Old)
+				If FSO.FileExists(Server.MapPath("/categorie/") & "\" & Url_Old) Then
+					Set Documento = FSO.GetFile(Server.MapPath("/categorie/") & "\" & Url_Old)
 					Documento.Delete
 					Set Documento = Nothing
 				End If
@@ -92,7 +92,7 @@ voce_p="Categorie Liv.1"
 		'response.Write("creo_pag:"&creo_pag)
 		if creo_pag="OK" then
 			Set FSO = CreateObject("Scripting.FileSystemObject")
-			Set Documento = FSO.OpenTextFile(Server.MapPath("/categorie-arredo-decorazioni/") & "\" & Url, 2, True)
+			Set Documento = FSO.OpenTextFile(Server.MapPath("/categorie/") & "\" & Url, 2, True)
 			ContenutoFile = ""
 			ContenutoFile = ContenutoFile & "<" & "%" & vbCrLf
 			ContenutoFile = ContenutoFile & "id = "& PkId &"" & vbCrLf

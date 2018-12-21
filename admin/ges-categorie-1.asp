@@ -7,6 +7,43 @@ pag_scheda="sche-categorie-1.asp"
 voce_s="Categoria Liv.1"
 voce_p="Categorie Liv.1"
 
+'Set nrs=Server.CreateObject("ADODB.Recordset")
+'sql = "SELECT * "
+'sql = sql + "FROM Categorie_1 "
+'nrs.Open sql, conn, 3, 3
+'if nrs.recordcount>0 then
+'		Do While not nrs.EOF
+'  	PkId=nrs("PkId")
+'		Titolo=nrs("Titolo_1")
+'		Url=ConvertiTitoloInNomeScript(Titolo, PkId, "C1")
+'		Set FSO = CreateObject("Scripting.FileSystemObject")
+'		Set Documento = FSO.OpenTextFile(Server.MapPath("/categorie/") & "\" & Url, 2, True)
+'		ContenutoFile = ""
+'		ContenutoFile = ContenutoFile & "<" & "%" & vbCrLf
+'		ContenutoFile = ContenutoFile & "id = "& PkId &"" & vbCrLf
+'		ContenutoFile = ContenutoFile & "%" & ">" & vbCrLf
+'		ContenutoFile = ContenutoFile & "<!--#include file=""inc_categorie_1.asp""-->"
+'		Documento.Write ContenutoFile
+'		Set Documento = Nothing
+'		Set FSO = Nothing
+
+'		nrs("Url")=Url
+
+'		nrs("InEvidenza")=0
+'		nrs("InEvidenza_Da")=Null
+'		nrs("InEvidenza_A")=Null
+'		nrs("InEvidenza_A")="31/12/2049 23:59:00"
+'		nrs("InEvidenza_Posizione")=100
+
+'		nrs.update
+'	nrs.movenext
+'	loop
+'end if
+'nrs.close
+
+'response.write("Fatto!!!!")
+'response.end
+
 'elimino eventuali contenuti vuoti
 Set nrs=Server.CreateObject("ADODB.Recordset")
 sql = "SELECT * "
@@ -24,25 +61,25 @@ nrs.close
 
 p=request("p")
 if p="" then p=1
-					
+
 ordine=request("ordine")
 if ordine="" then ordine=0
 if ordine=0 then ord="Categorie_1.PkId DESC"
 if ordine=1 then ord="Categorie_1.Titolo_1 ASC"
 if ordine=2 then ord="Categorie_1.Titolo_1 DESC"
 
-			
+
 Set nrs=Server.CreateObject("ADODB.Recordset")
 sql = "SELECT * "
 sql = sql + "FROM Categorie_1 "
 sql = sql + "ORDER BY "&ord&""
 nrs.Open sql, conn, 1, 1
-					
+
 nrs.PageSize = 20
-if nrs.recordcount > 0 then 
-nrs.AbSolutePage = p 
-maxPage = nrs.PageCount 
-End if 
+if nrs.recordcount > 0 then
+nrs.AbSolutePage = p
+maxPage = nrs.PageCount
+End if
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -89,23 +126,23 @@ return confirm("Si è sicuri di voler eliminare la riga?");
         <div id="coldx">
         <!--tab centrale-->
 			<table width="740" border="0" cellspacing="0" cellpadding="0">
-              
-              <tr class="intestazione col_primario"> 
+
+              <tr class="intestazione col_primario">
                 <td width="37%"><a href="<%=pag_elenco%>?ordine=0">Cod.</a>&nbsp;Titolo menù&nbsp;<a href="<%=pag_elenco%>?ordine=1">A/Z</a>&nbsp;<a href="<%=pag_elenco%>?ordine=2">Z/A</a></td>
                 <td width="30%">Titolo esteso</td>
                 <td width="14%">In evidenza</td>
                 <td width="11%" align="center">Posizione</td>
                 <td width="8%" align="center">Elimina</td>
               </tr>
-              <tr> 
+              <tr>
                 <td colspan="5">&nbsp;</td>
               </tr>
                <%
-			  	if nrs.recordcount>0 then	
-			  	Do While Not nrs.EOF and rowCount < nrs.PageSize 
+			  	if nrs.recordcount>0 then
+			  	Do While Not nrs.EOF and rowCount < nrs.PageSize
 				Rowcount = rowCount + 1
 			  %>
-              <tr <% if t = 0 then %>class="td_alt col_secondario"<% end if %>> 
+              <tr <% if t = 0 then %>class="td_alt col_secondario"<% end if %>>
                 <td><a href="<%=pag_scheda%>?pkid=<%=nrs("pkid")%>&ordine=<%=ordine%>"><span style="color: #c00;"><%=nrs("pkid")%>.</span><%=nrs("Titolo_1")%></a></td>
                 <td><%=nrs("Titolo_2")%></td>
                 <td><%if nrs("PrimoPiano")=True then%>Sì<%else%>No<%end if%></td>
@@ -120,22 +157,22 @@ return confirm("Si è sicuri di voler eliminare la riga?");
 			  	loop
 			  %>
               <%else%>
-              <tr> 
+              <tr>
                 <td colspan="5">Nessun record presente</td>
               </tr>
               <%end if%>
                <% if nrs.recordcount > 20 then %>
-              <tr> 
+              <tr>
                 <td colspan="5">&nbsp;</td>
               </tr>
-              
-              <tr class="intestazione col_primario"> 
+
+              <tr class="intestazione col_primario">
                 <td colspan="5">
-               
-                  Pag. <strong><%=p%></strong> di <%=nrs.PageCount%> - Vai alla pagina&nbsp;  
+
+                  Pag. <strong><%=p%></strong> di <%=nrs.PageCount%> - Vai alla pagina&nbsp;
                   <% if p > 5 then %>[<a href="<%=pag_elenco%>?p=<%=p-5%>&ordine=<%=ordine%>">&lt;&lt; 5 prec</a>]<%end if%>
                   <% if p > 1 then %>[<a href="<%=pag_elenco%>?p=<%=p-1%>&ordine=<%=ordine%>">&lt; prec</a>]<% end if %>
-                  <% for page = p to p+4 %> 
+                  <% for page = p to p+4 %>
                   <a href="<%=pag_elenco%>?p=<%=Page%>&ordine=<%=ordine%>"><%=page%></a>
 				  <% if page = nrs.PageCount then
 		   		 		page = p+4
@@ -144,8 +181,8 @@ return confirm("Si è sicuri di voler eliminare la riga?");
 				  <% next %>
                   <% if page-1 < nrs.PageCount then %>[<a href="<%=pag_elenco%>?p=<%=p+1%>&ordine=<%=ordine%>">succ &gt;</a>]<% end if %>
                   <% if nrs.PageCount-page > 5 then %>[<a href="<%=pag_elenco%>?p=<%=p+5%>&ordine=<%=ordine%>">5 succ &gt;&gt;</a>]<% end if%>
-                  [<a href="<%=pag_elenco%>?p=<%=nrs.PageCount%>&ordine=<%=ordine%>">ultima  pagina</a>] 
-               
+                  [<a href="<%=pag_elenco%>?p=<%=nrs.PageCount%>&ordine=<%=ordine%>">ultima  pagina</a>]
+
                 </td>
               </tr>
              <%end if%>

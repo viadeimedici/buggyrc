@@ -1,7 +1,7 @@
 <!--#include virtual="/inc_strConn.asp"-->
 <%
-cat_1=request("cat_1")
-'cat_1=id
+'cat_1=request("cat_1")
+cat_1=id
 if cat_1="" then cat_1=0
 if cat_1=0 then response.Redirect("/")
 
