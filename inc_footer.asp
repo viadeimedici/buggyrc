@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 address-col">
-                <img src="images/logo_v3_footer.png" alt="Buggy RC" style="width: 100%; padding-bottom: 15px;"/>
+                <img src="/images/logo_v3_footer.png" alt="Buggy RC" style="width: 100%; padding-bottom: 15px;"/>
                 <p>
-                    BuggyRc.it è un marchio di<br />Decorandflowers<br>
+                    BuggyRc.it &egrave; un marchio di<br />Decorandflowers<br>
                     C.F. e Iscr. Reg. Impr. di Firenze 06741510488<br />
                     R.E.A. di Firenze<br />
                     Via delle mimose, 13<br />
@@ -12,17 +12,7 @@
                     E-mail: info@buggyrc.it
                 </p>
             </div>
-            <div class="col-md-3 menu-col">
-                <h4>Cerca per Eventi</h4>
-                <ul>
-                    <li><a href="/prodotti_eventi.asp?eve=1">San valentino</a></li>
-                    <li><a href="/prodotti_eventi.asp?eve=2">Festa della donna</a></li>
-                    <li><a href="/prodotti_eventi.asp?eve=3">Pasqua</a></li>
-                    <li><a href="/prodotti_eventi.asp?eve=7">Festa della mamma</a></li>
-                    <li><a href="/prodotti_eventi.asp?eve=8">Provenzale</a></li>
-                    <li><a href="/prodotti_eventi.asp?eve=6">Estivo</a></li>
-                    <li><a href="/prodotti_eventi.asp?eve=9">Autunno</a></li>
-                </ul>
+            <div class="col-md-3 address-col">
                 <h4>Novit&aacute; e Offerte</h4>
                 <ul>
                     <li><a href="/novita.asp">Tutti gli ultimi arrivi</a></li>
@@ -59,7 +49,7 @@
                     <li>Bonifico Bancario - PostePay</li>
                     <li>Contrassegno</li>
                     <li>Carte di credito - Prepagate - PayPal<br />
-                        <img src="images/payment.png" style="padding: 5px 15px 0px 0px;">
+                        <img src="/images/payment.png" style="padding: 5px 15px 0px 0px;">
                     </li>
                 </ul>
             </div>
@@ -81,10 +71,10 @@
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="javascripts/bootstrap.min.js"></script>
-<script src="javascripts/readmore.min.js"></script>
-<script src="javascripts/jquery.fancybox.min.js"></script>
-<script src="javascripts/custom.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
+<script src="/javascripts/readmore.min.js"></script>
+<script src="/javascripts/jquery.fancybox.min.js"></script>
+<script src="/javascripts/custom.js"></script>
 
 <script>
 $(document).ready(function() {
