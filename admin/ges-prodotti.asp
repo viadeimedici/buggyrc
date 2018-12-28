@@ -74,7 +74,22 @@ if ordine=4 then ord="Prodotti_Madre.Stato DESC"
 titolo=request("titolo")
 codice=request("codice")
 FkCategoria_2=request("FkCategoria_2")
-if FkCategoria_2="" then FkCategoria_2=0
+if Len(FkCategoria_2)>0 then
+	if Instr(FkCategoria_2, "AAA")>0 then
+		FkCategoria_1=Replace(FkCategoria_2, "AAA", "")
+		FkCategoria_1=cInt(FkCategoria_1)
+		FkCategoria_2=0
+		'response.write("FkCategoria_1:"&FkCategoria_1&"<br>")
+		'response.write("FkCategoria_2:"&FkCategoria_2&"<br>")
+	else
+		FkCategoria_2=cInt(FkCategoria_2)
+		FkCategoria_1=0
+	end if
+end if
+if FkCategoria_2="" then
+	FkCategoria_2=0
+	FkCategoria_1=0
+end if
 
 inofferta=request("inofferta")
 if inofferta="" then inofferta=0
@@ -88,17 +103,21 @@ sql = sql + "FROM Prodotti_Madre "
 if titolo<>"" then
 	ricerca = "WHERE Titolo LIKE '%"&titolo&"%' "
 	if FkCategoria_2>0 then ricerca = ricerca + "AND FkCategoria_2="&FkCategoria_2&" "
+	if FkCategoria_1>0 then ricerca = ricerca + "AND FkCategoria_1="&FkCategoria_1&" "
 end if
 if codice<>"" then
 	ricerca = "WHERE Codice LIKE '%"&codice&"%' "
 	if FkCategoria_2>0 then ricerca = ricerca + "AND FkCategoria_2="&FkCategoria_2&" "
+	if FkCategoria_1>0 then ricerca = ricerca + "AND FkCategoria_1="&FkCategoria_1&" "
 end if
 if titolo<>"" and codice<>"" then
 	ricerca = "WHERE Titolo LIKE '%"&titolo&"%' AND Codice LIKE '%"&codice&"%' "
 	if FkCategoria_2>0 then ricerca = ricerca + "AND FkCategoria_2="&FkCategoria_2&" "
+	if FkCategoria_1>0 then ricerca = ricerca + "AND FkCategoria_1="&FkCategoria_1&" "
 end if
-if titolo="" and codice="" and FkCategoria_2>0 then
-	ricerca = "WHERE FkCategoria_2="&FkCategoria_2&" "
+if titolo="" and codice="" and (FkCategoria_2>0 or FkCategoria_1>0) then
+	if FkCategoria_2>0 then ricerca = "WHERE FkCategoria_2="&FkCategoria_2&" "
+	if FkCategoria_1>0 then ricerca = "WHERE FkCategoria_1="&FkCategoria_1&" "
 end if
 if inevidenza=1 then
 	ricerca = "WHERE InEvidenza = 1 "
@@ -165,25 +184,43 @@ return confirm("Si è sicuri di voler eliminare la riga?");
                 <tr class="intestazione col_primario"><td colspan="2">CERCA I PRODOTTI PER</td></tr>
 
                     <tr>
-                        <td class="vertspacer">Categoria Liv.2&nbsp;<%
+                        <td class="vertspacer">Categoria Liv.2&nbsp;
+						<%
 						Set cs=Server.CreateObject("ADODB.Recordset")
-						sql = "Select * From Categorie_2 order by titolo_1 ASC"
+						sql = "Select * From Categorie_1 order by titolo_1 ASC"
 						cs.Open sql, conn, 1, 1
 						%>
                         <select name="FkCategoria_2" id="FkCategoria_2" class="form">
-                            <option value=0 <%if cInt(FkCategoria_2)=0 then%> selected<%end if%>>Scegli la categoria</option>
+                            <option value=0 <%if FkCategoria_2=0 and FkCategoria_1=0 then%> selected<%end if%>>Scegli la categoria</option>
                             <%
                             if cs.recordcount>0 then
                             Do While Not cs.EOF
+								FkCategoria_1=cs("pkid")
                             %>
-                            <option value=<%=cs("pkid")%> <%if cInt(FkCategoria_2)=cs("pkid") then%> selected<%end if%>><%=ConvertiCaratteri(cs("titolo_1"))%></option>
+                            <option value="AAA<%=FkCategoria_1%>" style="font-weight: bold;">***<%=ConvertiCaratteri(cs("titolo_1"))%>***</option>
+								<%
+                                Set cs2=Server.CreateObject("ADODB.Recordset")
+                                sql = "Select * From Categorie_2 where FkCategoria_1="&FkCategoria_1&" order by titolo_1 ASC"
+                                cs2.Open sql, conn, 1, 1
+                                if cs2.recordcount>0 then
+                                	Do While Not cs2.EOF
+                                %>
+                                <option value="<%=cs2("pkid")%>"><%=ConvertiCaratteri(cs2("titolo_1"))%></option>
+                                <%
+	                            	cs2.movenext
+	                            	loop
+	                            end if
+								cs2.close
+	                            %>
+
                             <%
                             cs.movenext
                             loop
                             end if
                             %>
                         </select>
-                        <%cs.close%></td>
+                        <%cs.close%>
+                        </td>
                         <td class="vertspacer" >Codice&nbsp;<input type="text" name="Codice" id="Codice" class="form" size="30" maxlength="100" value="<%=Codice%>" /></td>
 
                     </tr>
@@ -254,26 +291,28 @@ return confirm("Si è sicuri di voler eliminare la riga?");
 								sql = sql + "WHERE PkId="&fkcategoria_2&""
 								crs.Open sql, conn, 1, 1
 								if crs.recordcount>0 then
-									categoria=crs("Titolo_1")
-								'else
-									'categoria="Nessuna categoria scelta"
+									categoria_2=crs("Titolo_1")
+								else
+									categoria_2=" - "
 								end if
 								crs.close
 							else
-								if fkcategoria_1>0 then
-									Set crs=Server.CreateObject("ADODB.Recordset")
-									sql = "SELECT * "
-									sql = sql + "FROM Categorie_1 "
-									sql = sql + "WHERE PkId="&fkcategoria_1&""
-									crs.Open sql, conn, 1, 1
-									if crs.recordcount>0 then
-										categoria=crs("Titolo_1")
-
-									end if
-									crs.close
+								categoria=" - "
+							end if
+							if fkcategoria_1>0 then
+								Set crs=Server.CreateObject("ADODB.Recordset")
+								sql = "SELECT * "
+								sql = sql + "FROM Categorie_1 "
+								sql = sql + "WHERE PkId="&fkcategoria_1&""
+								crs.Open sql, conn, 1, 1
+								if crs.recordcount>0 then
+									categoria_1=crs("Titolo_1")
 								else
-									categoria="Nessuna categoria scelta"
+									categoria_1=" - "	
 								end if
+								crs.close
+							else
+								categoria=" - "
 							end if
 
 							Set img_rs=Server.CreateObject("ADODB.Recordset")
@@ -289,7 +328,7 @@ return confirm("Si è sicuri di voler eliminare la riga?");
               <tr <% if t = 0 then %>class="td_alt col_secondario"<% end if %>>
                 <td><a href="<%=pag_scheda%>?pkid=<%=nrs("pkid")%>&ordine=<%=ordine%>&p=<%=p%>"><span style="color: #c00;"><%=nrs("pkid")%>.</span><%=nrs("Titolo")%> - <%=nrs("Codice")%></a></td>
                 <td><img src="<%=img%>" height="40%" /></td>
-                <td><%=categoria%></td>
+                <td><b><%=categoria_1%></b><br /><%=categoria_2%></td>
                 <td align="center">
                 <%if nrs("Stato")=0 then%>Non visibile<%end if%>
                 <%if nrs("Stato")=1 then%>Visibile<%end if%>
