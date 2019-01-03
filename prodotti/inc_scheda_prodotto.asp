@@ -166,8 +166,8 @@ if ric="" then ric=0
                             <ul class="list-group text-center">
                                 <li class="list-group-item" style="padding-top: 20px">
                                     <p>
-                                    Prezzo D&F<br />
-                                    <span class="price-new"><i class="fa fa-tag"></i>&nbsp;<%=FormatNumber(prezzoofferta,2)%> &euro;</span><br />
+                                    Prezzo BuggyRC<br />
+                                    <span class="price-new"><%=FormatNumber(prezzoofferta,2)%> &euro;</span><br />
                                     <%if prezzoprodotto>0 then%><span class="price-old">Invece di  <b><%=FormatNumber(prezzoprodotto,2)%> &euro;</b></span><br /><%end if%>
                                     </p>
                                 </li>
@@ -245,7 +245,8 @@ if ric="" then ric=0
                                 if pezzi="" or IsNull(pezzi) then pezzi=0
 
                                 'modifica per interrompere il carrello'
-                                pezzi=0
+                                'pezzi=0
+                                'response.write("pezzi:"&pezzi)
 
                                 pkid_prodotto_figlio=var_rs("PkId")
                                 %>
@@ -266,7 +267,7 @@ if ric="" then ric=0
                                         </div>
                                     </td>
                                     <td data-th="Price" class="hidden-xs text-right"><%=FormatNumber(var_rs("PrezzoProdotto"),2)%> &euro;</td>
-                                    <td data-th="Price" class="hidden-xs text-center"><%'=Pezzi%></td>
+                                    <td data-th="Price" class="hidden-xs text-center"><%=Pezzi%></td>
                                     <td data-th="Quantity">
                                         <%if Pezzi>0 then%>
                                           <select class="form-control text-center" data-size="5" title="Pezzi <%=var_rs("Titolo")%>" name="pezzi_<%=pkid_prodotto_figlio%>" id="pezzi_<%=pkid_prodotto_figlio%>">
@@ -280,11 +281,11 @@ if ric="" then ric=0
                         										%>
                         									</select>
                                         <%else%>
-                                          <!--<%if ric=1 and pkid_prodotto_figlio_email=pkid_prodotto_figlio then%>
+                                          <%if ric=1 and pkid_prodotto_figlio_email=pkid_prodotto_figlio then%>
                                             <a data-fancybox data-src="#hidden-response-<%=pkid_prodotto_figlio%>" href="javascript:;" class="btn launch_<%=pkid_prodotto_figlio%> btn-danger btn-block">Ordina per email <i class="glyphicon glyphicon-envelope"></i></a>
                                           <%else%>
                                             <a data-fancybox data-src="#hidden-content-<%=pkid_prodotto_figlio%>" href="javascript:;" class="btn launch_<%=pkid_prodotto_figlio%> btn-danger btn-block">Ordina per email <i class="glyphicon glyphicon-envelope"></i></a>
-                                          <%end if%>-->
+                                          <%end if%>
                                         <%end if%>
                                     </td>
                                 </tr>
@@ -294,7 +295,7 @@ if ric="" then ric=0
                                 %>
                             </tbody>
                         </table>
-                        <!--<%if TotalePezzi>0 then%><a href="#" class="btn btn-danger btn-block" onClick="Verifica();">Aggiungi al carrello <i class="glyphicon glyphicon-shopping-cart"></i></a><%end if%>-->
+                        <%if TotalePezzi>0 then%><a href="#" class="btn btn-danger btn-block" onClick="Verifica();">Aggiungi al carrello <i class="glyphicon glyphicon-shopping-cart"></i></a><%end if%>
                         </form>
                         <%
                         end if
