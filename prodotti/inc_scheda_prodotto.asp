@@ -106,7 +106,7 @@ if ric="" then ric=0
 <head>
     <title><%=Titolo_Prod%> - <%=Titolo_1_Cat_2%> - <%=Titolo_1_Cat_1%> - Buggy RC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="<%=Descrizione_Prod%>, <%=Titolo_Prod%>, <%=Titolo_1_Cat_2%>, <%=Titolo_1_Cat_1%>, Buggy RC.">
+    <meta name="description" content="<%=TogliTAG(Descrizione_Prod)%>, <%=Titolo_Prod%>, <%=Titolo_1_Cat_2%>, <%=Titolo_1_Cat_1%>, Buggy RC.">
     <!--#include virtual="/inc_head.asp"-->
     <SCRIPT language="JavaScript">
 			function Verifica() {
@@ -150,7 +150,23 @@ if ric="" then ric=0
                </div>
                <div class="col-md-8">
                    <div class="top-buffer">
-                         <p class="descrizione"><small>
+                         <%
+                         Set img_rs=Server.CreateObject("ADODB.Recordset")
+                         sql = "SELECT TOP 1 * FROM Immagini WHERE FkContenuto="&Pkid_Prod&" and Tabella='Prodotti_Madre' ORDER BY Posizione ASC"
+                         img_rs.Open sql, conn, 1, 1
+                         if img_rs.recordcount>0 then
+                           img_principale="http://www.buggyrc.it/public/"&NoLettAcc(img_rs("Zoom"))
+                         %>
+                         <p class="descrizione">
+                             <img src="<%=img_principale%>" width="500px" />
+                         </p>
+                         <%
+                         end if
+                         img.close
+                         %>
+
+                         <p class="descrizione">
+                             <small>
                              <%=Descrizione_Prod%><br >
                              <%if Len(Materiale_Prod)>0 then%><strong>Materiale:</strong><%=Materiale_Prod%><br /><%end if%>
                              <%if Len(Dimensioni_Prod)>0 then%><strong>Dimensioni:</strong><%=Dimensioni_Prod%><br /><%end if%>
@@ -184,7 +200,8 @@ if ric="" then ric=0
                 <div class="col-md-12">
                     <div class="top-buffer">
                         <div class="top-buffer">
-                            <hr />
+                            <strong>PHOTOGALLERY</strong>
+                            <hr style="padding: 10px; margin: 1px;" />
                             <%
                             Set img_rs=Server.CreateObject("ADODB.Recordset")
                 						sql = "SELECT * FROM Immagini WHERE FkContenuto="&Pkid_Prod&" and Tabella='Prodotti_Madre' ORDER BY Posizione ASC"

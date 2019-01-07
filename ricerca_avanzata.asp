@@ -213,7 +213,7 @@ end if
                 if PrezzoOfferta="" or IsNull(PrezzoOfferta) then PrezzoOfferta=0
 								Url_Prod=pro_rs("Url")
                 If Len(Url_Prod)>0 then
-                  Url_Prod="/prodotti-arredo-decorazioni/"&Url_Prod
+                  Url_Prod="/prodotti/"&Url_Prod
                 Else
                   Url_Prod="/scheda.asp?pkid_prod="&Pkid_Prod
                 End If
@@ -222,7 +222,7 @@ end if
                 sql = "SELECT TOP 1 * FROM Immagini WHERE FkContenuto="&Pkid_Prod&" and Tabella='Prodotti_Madre' ORDER BY Posizione ASC"
                 img_rs.Open sql, conn, 1, 1
                 if img_rs.recordcount>0 then
-                  img="https://www.decorandflowers.it/public/thumb/"&NoLettAcc(img_rs("File"))
+                  img="http://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
                 else
                   img=""
                 end if
