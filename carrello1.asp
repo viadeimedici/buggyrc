@@ -196,9 +196,9 @@
 <html>
 
 <head>
-    <title>Decor &amp; Flowers</title>
+    <title>Buggyrc.it</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Decor &amp; Flowers.">
+    <meta name="description" content="Buggyrc.it">
     <meta name="keywords" content="">
     <!--#include file="inc_head.asp"-->
     <script language="javascript">
@@ -309,7 +309,22 @@
 																		Do while not rs.EOF
 																		FkProdotto_Figlio=rs("FkProdotto_Figlio")
 																		FkProdotto_Madre=rs("FkProdotto_Madre")
-																		NomePagina="/scheda.asp?pkid_prod="&FkProdotto_Madre
+
+																		Set pro_rs=Server.CreateObject("ADODB.Recordset")
+										                sql = "SELECT Top 8 * "
+										                sql = sql + "FROM Prodotti_Madre "
+										                sql = sql + "WHERE Pkid="&FkProdotto_Madre
+										                pro_rs.Open sql, conn, 1, 1
+										                if pro_rs.recordcount>0 then
+																			NomePagina=pro_rs("Url")
+																			If Len(NomePagina)>0 then
+																				NomePagina="/prodotti/"&NomePagina
+																			Else
+																				NomePagina="/prodotti/inc_scheda_prodotto.asp?pkid_prod="&Pkid_Prod
+																			End If
+																		end if
+																		pro_rs.close
+																		'NomePagina="/scheda.asp?pkid_prod="&FkProdotto_Madre
 
 																		Set url_prodotto_rs = Server.CreateObject("ADODB.Recordset")
 																		sql = "SELECT PkId, Pezzi FROM Prodotti_Figli where PkId="&FkProdotto_Figlio
@@ -461,13 +476,13 @@
                         </li>
                     </ul>
                     <div class="panel-footer">
-                        <!--<a href="#" class="btn btn-danger btn-block" onClick="NoteCliente();">Completa l'acquisto <i class="fa fa-angle-right"></i></a>-->
+                        <a href="#" class="btn btn-danger btn-block" onClick="NoteCliente();">Completa l'acquisto <i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
 								<%end if%>
 
 								<div class="alert alert-success" role="alert" style="text-align: center;">
-                  <em>Hai bisogno di aiuto? Contattaci!</em><br /><br /><a href="mailto:info@decorandflowers.it" class="alert-link"><span class="glyphicon glyphicon-envelope"></span> info@decorandflowers.it</a>
+                  <em>Hai bisogno di aiuto? Contattaci!</em><br /><br /><a href="mailto:info@buggyrc.it" class="alert-link"><span class="glyphicon glyphicon-envelope"></span> info@buggyrc.it</a>
                   <br /><br />Lunedi - Venerdi<br />9.00 - 13.00 | 14.00 - 18.00<br />Sabato e Domenica CHIUSI<br />
                 </div>
 						</div>

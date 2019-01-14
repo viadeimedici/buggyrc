@@ -103,10 +103,9 @@
 	<html>
 
 	<head>
-		<title>Decor &amp; Flowers</title>
+		<title>Buggyrc.it</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="Decor &amp; Flowers.">
-		<meta name="keywords" content="">
+		<meta name="description" content="Buggyrc.it">
 		<!--#include file="inc_head.asp"-->
 		<SCRIPT language="JavaScript">
 			function verifica() {
@@ -134,7 +133,7 @@
 					return false;
 				}
 				if (citta_sp == "") {
-					alert("Non  e\' stato compilato il campo \"Citt�\".");
+					alert("Non  e\' stato compilato il campo \"Citta'\".");
 					return false;
 				} else
 					return true
@@ -174,7 +173,7 @@
 					return false;
 				}
 				if (citta_sp == "") {
-					alert("Non  e\' stato compilato il campo \"Citt�\".");
+					alert("Non  e\' stato compilato il campo \"Citta'\".");
 					return false;
 				} else
 					<%end if%>
