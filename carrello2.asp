@@ -60,9 +60,12 @@
 		if TipoCostoTrasportoScelto=2 then
 			CostoSpedizione=(TotaleCarrello*CostoTrasportoScelto)/100
 		end if
-		if TipoCostoTrasportoScelto=3 or TipoCostoTrasportoScelto=10 or TotaleCarrello>=100 then
+		if TipoCostoTrasportoScelto=3 or TipoCostoTrasportoScelto=10 then
 			CostoSpedizione=0
 		end if
+		'if TipoCostoTrasportoScelto=3 or TipoCostoTrasportoScelto=10 or TotaleCarrello>=100 then
+		'	CostoSpedizione=0
+		'end if
 
 		os1("TipoSpedizione")=NomeTrasportoScelto
 		os1("FkSpedizione")=TipoTrasportoScelto

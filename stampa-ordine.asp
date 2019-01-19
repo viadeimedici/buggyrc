@@ -58,12 +58,12 @@ rs.close
 <html>
 
 <head>
-    <title>Decor &amp; Flowers - Ordine n. <%=IdOrdine%> - Data <%=DataAggiornamento%></title>
+    <title>BuggyRC - Ordine n. <%=IdOrdine%> - Data <%=DataAggiornamento%></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Decorandflowers.">
+    <meta name="description" content="BuggyRC.">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:description" content="Decorandflowers.">
+    <meta property="og:description" content="BuggyRC.">
     <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="javascripts/html5shiv.js"></script><![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,600,700" rel="stylesheet">
@@ -97,9 +97,9 @@ rs.close
             <div class="col-xs-6">
                 <p style="font-size: 80%; margin: 20px 15px; color: #999">
                   Decorandflowers<br>
-                  Partita IVA 06741510488 - Codice Fiscale VRDLSN81C07D403B<br />
+                  C.F. e Iscr. Reg. Impr. di Firenze 06741510488<br />
                   Via delle mimose, 13 - 50050 Capraia e Limite (Firenze)<br />
-                  E-mail: info@decorandflowers.it
+                  E-mail: info@buggyrc.it
                 </p>
             </div>
         </div>

@@ -42,7 +42,7 @@
             <div class="col-md-3 menu-col">
                 <h4>Spedizioni</h4>
                 <ul class="checklist">
-                    <li>Spedizioni GRATUITE in tutta Italia per ordini superiori a 100&euro;</li>
+                    <li>Spedizioni assicurate in tutta Italia, isole comprse, a 10&euro;</li>
                 </ul>
                 <h4>Pagamenti accettati</h4>
                 <ul class="checklist">

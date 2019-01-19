@@ -143,7 +143,7 @@
         </span>
         <span class="banner stacked consegne">
           <h3 class="title">SPEDIZIONI</h3>
-          <p class="text" style="padding-right: 0px;">Spedizioni <b>GRATUITE</b> in tutta Italia per ordini superiori a 100&euro;</p>
+          <p class="text" style="padding-right: 0px;">Spedizioni assicurate in tutta Italia, isole comprese, a 10&euro;</p>
         </span>
     </div>
 </div>
