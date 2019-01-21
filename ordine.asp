@@ -50,6 +50,7 @@
 		Citta=ss("Citta_fat")
 		Provincia=ss("Provincia_fat")
 		CAP=ss("CAP_fat")
+		sdi=ss("sdi")
 
 		TotaleGenerale=ss("TotaleGenerale")
 
@@ -1029,7 +1030,8 @@ End If
 															<%if Rag_Soc<>"" then%><%=Rag_Soc%>&nbsp;&nbsp;<%end if%><%if nominativo<>"" then%><%=nominativo%><%end if%><br />
 															<%if Cod_Fisc<>"" then%>Codice fiscale: <%=Cod_Fisc%>&nbsp;&nbsp;<%end if%><%if PartitaIVA<>"" then%>Partita IVA: <%=PartitaIVA%><%end if%><br />
 															<%if Len(indirizzo)>0 then%><%=indirizzo%><br /><%end if%>
-															<%=cap%>&nbsp;&nbsp;<%=citta%><%if provincia<>"" then%>&nbsp;(<%=provincia%>)&nbsp;<%end if%>
+															<%=cap%>&nbsp;&nbsp;<%=citta%><%if provincia<>"" then%>&nbsp;(<%=provincia%>)<%end if%>
+															<%if sdi<>"" then%><br />SDI:&nbsp;<%=sdi%><%end if%>
 														</p>
 		                    </div>
 		                </div>

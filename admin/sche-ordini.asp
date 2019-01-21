@@ -90,7 +90,7 @@ voce_p="Ordini"
 				HTML1 = HTML1 & "<html>"
 				HTML1 = HTML1 & "<head>"
 				HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-				HTML1 = HTML1 & "<title>DecorAndFlowers.it</title>"
+				HTML1 = HTML1 & "<title>BuggyRC.it</title>"
 				HTML1 = HTML1 & "</head>"
 				HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
 				HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
@@ -101,7 +101,7 @@ voce_p="Ordini"
 				HTML1 = HTML1 & "</tr>"
 				HTML1 = HTML1 & "<tr>"
 				HTML1 = HTML1 & "<td>"
-				HTML1 = HTML1 & "<font face=Verdana size=2 color=#000000>Per qualsiasi chiarimento o informazione ci contatti:<br>Email: info@decorandflowers.it<br><br>Cordiali Saluti, lo staff di DecorAndFlowers.it</font>"
+				HTML1 = HTML1 & "<font face=Verdana size=2 color=#000000>Per qualsiasi chiarimento o informazione ci contatti:<br>Email: info@buggyrc.it<br><br>Cordiali Saluti, lo staff di BuggyRC.it</font>"
 				HTML1 = HTML1 & "</td>"
 				HTML1 = HTML1 & "</tr>"
 
@@ -109,9 +109,9 @@ voce_p="Ordini"
 				HTML1 = HTML1 & "</body>"
 				HTML1 = HTML1 & "</html>"
 
-				Mittente = "info@decorandflowers.it"
+				Mittente = "info@buggyrc.it"
 				Destinatario = email_iscr
-					Oggetto = "Aggiornamento ordine n. "&pkid&" effettuato su DecorAndFlowers.it"
+					Oggetto = "Aggiornamento ordine n. "&pkid&" effettuato su BuggyRC.it"
 				Testo = HTML1
 
 				Set eMail_cdo = CreateObject("CDO.Message")
@@ -126,11 +126,11 @@ voce_p="Ordini"
 					' Timeout
 					.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 					' Server SMTP di uscita
-					.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+					.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 					' Porta SMTP
 					.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 					'Username
-					.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+					.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 					'Password
 					.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -153,9 +153,9 @@ voce_p="Ordini"
 
 				'invio al webmaster
 
-				Mittente = "info@decorandflowers.it"
+				Mittente = "info@buggyrc.it"
 				Destinatario = "viadeimedici@gmail.com"
-				Oggetto = "Aggiornamento ordine n. "&pkid&" effettuato su DecorAndFlowers.it"
+				Oggetto = "Aggiornamento ordine n. "&pkid&" effettuato su BuggyRC.it"
 				Testo = HTML1
 
 				Set eMail_cdo = CreateObject("CDO.Message")
@@ -170,11 +170,11 @@ voce_p="Ordini"
 					' Timeout
 					.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 					' Server SMTP di uscita
-					.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+					.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 					' Porta SMTP
 					.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 					'Username
-					.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+					.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 					'Password
 					.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -205,7 +205,7 @@ voce_p="Ordini"
 			HTML1 = HTML1 & "<html>"
 			HTML1 = HTML1 & "<head>"
 			HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-			HTML1 = HTML1 & "<title>DecorAndFlowers.it</title>"
+			HTML1 = HTML1 & "<title>BuggyRC.it</title>"
 			HTML1 = HTML1 & "</head>"
 			HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
 			HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
@@ -217,17 +217,17 @@ voce_p="Ordini"
 			HTML1 = HTML1 & "<b><a href="""&NoteAzienda&""">"&NoteAzienda&"</a></b><br><br>"
 			end if
 
-			HTML1 = HTML1 & "<font face=Verdana size=2 color=#000000>Per qualsiasi chiarimento o informazione ci contatti:<br>Email: info@decorandflowers.it"
-			HTML1 = HTML1 & "<br><br>Cordiali Saluti, lo staff di DecorAndFlowers.it</font>"
+			HTML1 = HTML1 & "<font face=Verdana size=2 color=#000000>Per qualsiasi chiarimento o informazione ci contatti:<br>Email: info@buggyrc.it"
+			HTML1 = HTML1 & "<br><br>Cordiali Saluti, lo staff di BuggyRC.it</font>"
 			HTML1 = HTML1 & "</td>"
 			HTML1 = HTML1 & "</tr>"
 			HTML1 = HTML1 & "</table>"
 			HTML1 = HTML1 & "</body>"
 			HTML1 = HTML1 & "</html>"
 
-			Mittente = "info@decorandflowers.it"
+			Mittente = "info@buggyrc.it"
 			Destinatario = email_iscr
-				Oggetto = "Conferma spedizione ordine n "&pkid&" da DecorAndFlowers.it"
+				Oggetto = "Conferma spedizione ordine n "&pkid&" da BuggyRC.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -242,11 +242,11 @@ voce_p="Ordini"
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -272,7 +272,7 @@ voce_p="Ordini"
 			HTML1 = HTML1 & "<html>"
 			HTML1 = HTML1 & "<head>"
 			HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-			HTML1 = HTML1 & "<title>DecorAndFlowers.it</title>"
+			HTML1 = HTML1 & "<title>BuggyRC.it</title>"
 			HTML1 = HTML1 & "</head>"
 			HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
 			HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
@@ -285,16 +285,16 @@ voce_p="Ordini"
 			end if
 
 			HTML1 = HTML1 & "<font face=Verdana size=2 color=#000000><br><br>Per qualsiasi chiarimento o informazione ci contatti.</font><br>"
-			HTML1 = HTML1 & "<br><br>Cordiali Saluti, lo staff di DecorAndFlowers.it</font>"
+			HTML1 = HTML1 & "<br><br>Cordiali Saluti, lo staff di BuggyRC.it</font>"
 			HTML1 = HTML1 & "</td>"
 			HTML1 = HTML1 & "</tr>"
 			HTML1 = HTML1 & "</table>"
 			HTML1 = HTML1 & "</body>"
 			HTML1 = HTML1 & "</html>"
 
-			Mittente = "info@decorandflowers.it"
-			Destinatario = "info@decorandflowers.it"
-				Oggetto = "Conferma spedizione ordine n "&pkid&" da DecorAndFlowers.it"
+			Mittente = "info@buggyrc.it"
+			Destinatario = "info@buggyrc.it"
+				Oggetto = "Conferma spedizione ordine n "&pkid&" da BuggyRC.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -309,11 +309,11 @@ voce_p="Ordini"
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -334,9 +334,9 @@ voce_p="Ordini"
 
 			'invio al webmaster
 
-			Mittente = "info@decorandflowers.it"
+			Mittente = "info@buggyrc.it"
 			Destinatario = "viadeimedici@gmail.com"
-				Oggetto = "Conferma spedizione ordine n "&pkid&" da DecorAndFlowers.it"
+				Oggetto = "Conferma spedizione ordine n "&pkid&" da BuggyRC.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -351,11 +351,11 @@ voce_p="Ordini"
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -664,6 +664,7 @@ return confirm("Si &egrave; sicuri di voler eliminare la riga?");
 					Citta_fat=ss("Citta_fat")
 					Provincia_fat=ss("Provincia_fat")
 					CAP_fat=ss("CAP_fat")
+					sdi=ss("sdi")
 
 					TotaleGenerale=ss("TotaleGenerale")
 
@@ -851,7 +852,9 @@ return confirm("Si &egrave; sicuri di voler eliminare la riga?");
                     <td colspan="2"><%if Rag_Soc_fat<>"" then%><%=Rag_Soc_fat%>&nbsp;&nbsp;<%end if%><%if nominativo_fat<>"" then%><%=nominativo_fat%><%end if%><br />
 															<%if Cod_Fisc_fat<>"" then%>Codice fiscale: <%=Cod_Fisc_fat%>&nbsp;&nbsp;<%end if%><%if PartitaIVA_fat<>"" then%>Partita IVA: <%=PartitaIVA_fat%><%end if%><br />
 															<%if Len(indirizzo_fat)>0 then%><%=indirizzo_fat%> - <%end if%>
-															<%=cap_fat%>&nbsp;&nbsp;<%=citta_fat%><%if provincia_fat<>"" then%>&nbsp;(<%=provincia_fat%>)&nbsp;<%end if%></td>
+															<%=cap_fat%>&nbsp;&nbsp;<%=citta_fat%><%if provincia_fat<>"" then%>&nbsp;(<%=provincia_fat%>)<%end if%>
+															<%if sdi<>"" then%><br />SDI:&nbsp;<%=sdi%><%end if%>
+										</td>
                   </tr>
                   <tr>
                     <td colspan="4">&nbsp;</td>
@@ -905,7 +908,7 @@ return confirm("Si &egrave; sicuri di voler eliminare la riga?");
 					<input name="Submit" type="submit" class="button col_primario" value="Aggiorna" align="absmiddle" />
                           &nbsp; <input name="Annulla" type="button" class="button col_primario" value="Annulla" onclick="document.location.href = '<%=pag_elenco%>?p=<%=p%>&ordine=<%=ordine%>'" />
                           <% if PkId > 0 then %>&nbsp; <a href="<%=pag_scheda%>?mode=1&pkid=<%=PkId%>&C1=ON&ordine=<%=ordine%>&p=<%=p%>" title="Elimina la riga" onClick="return elimina();"><img src="immagini/delete.gif" width="16" height="16" align="absmiddle" alt="Elimina la riga" /></a> <%end if%></td>
-                    <td align="right">[<a href="../stampa-ordine.asp?IdOrdine=<%=PkId%>" target="_blank">Stampa l'ordine</a>] - [<a href="sche-fatture.asp?PkId_Ordine=<%=PkId%>&mode=2">Genera fattura</a>]</td>
+                    <td align="right">[<a href="../stampa-ordine.asp?IdOrdine=<%=PkId%>" target="_blank">Stampa l'ordine</a>]</td>
                   </tr>
 				  <tr align="left">
                     <td height="20" colspan="4">&nbsp;</td>

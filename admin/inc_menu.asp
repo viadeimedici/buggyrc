@@ -47,6 +47,5 @@
             <h3>Ordini/Fatture</h3>
             <ul>
                 <li class="list_news"><a href="ges-ordini.asp">Elenco ordini</a></li>
-                <li class="list_news"><a href="ges-fatture.asp">Elenco fatture</a></li>
             </ul>
         </div>

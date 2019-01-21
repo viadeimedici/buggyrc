@@ -84,6 +84,7 @@
 		CAP=os1("CAP_fat")
 		Citta=os1("Citta_fat")
 		Provincia=os1("Provincia_fat")
+		sid=os1("sid")
 	else
 		Cod_Fisc=request("Cod_Fisc")
 		PartitaIVA=request("PartitaIVA")
@@ -91,6 +92,7 @@
 		CAP=request("CAP")
 		Citta=request("Citta")
 		Provincia=request("Provincia")
+		sdi=request("sdi")
 	end if
 
 	os1("Nominativo_fat")=Nominativo
@@ -101,6 +103,7 @@
 	os1("CAP_fat")=CAP
 	os1("Citta_fat")=Citta
 	os1("Provincia_fat")=Provincia
+	os1("sdi")=sdi
 
 	os1("DataAggiornamento")=now()
 	os1("IpOrdine")=Request.ServerVariables("REMOTE_ADDR")
@@ -173,6 +176,7 @@
 	  		CAPOrdine=ss("CAP_fat")
 	  		CittaOrdine=ss("Citta_fat")
 	  		ProvinciaOrdine=ss("Provincia_fat")
+				sdiOrdine=ss("sdi")
 	  	end if
 		%>
 		<div class="container content">
@@ -497,6 +501,12 @@
 									<label for="provincia" class="col-sm-4 control-label">Provincia</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control" name="provincia" id="provincia" value="<%=ProvinciaOrdine%>" maxlength="2">
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<label for="citta" class="col-sm-4 control-label">SDI o PEC</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" name="sdi" id="sdi" value="<%=sdiOrdine%>" maxlength="100">
 									</div>
 								</div>
 							</div>
