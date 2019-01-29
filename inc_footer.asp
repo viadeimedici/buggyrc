@@ -110,7 +110,7 @@ $(document).ready(function() {
   <%if ric=1 then%>
     <div style="display: none; max-width: 800px;" id="hidden-content">
     <h4>Richiesta informazioni e disponibilit&agrave; per<br /><b><%=Titolo_Prod%></b><br />Codice prodotto: <%=Codice_Prod%></h4>
-    <p><strong>La richiesta &egrave; stata inoltrata correttamente, il nostro staff ti contatter&agrave; il prima possibile.<br />Saluti da DecorAndFlowers.it</strong></p>
+    <p><strong>La richiesta &egrave; stata inoltrata correttamente, il nostro staff ti contatter&agrave; il prima possibile.<br />Saluti da BuggyRC.it</strong></p>
   <%else%>
     <div style="display: none; max-width: 800px;" id="hidden-content">
         <h4>Richiesta informazioni e disponibilit&agrave; per<br /><b><%=Titolo_Prod%></b><br />Codice prodotto: <%=Codice_Prod%></h4>

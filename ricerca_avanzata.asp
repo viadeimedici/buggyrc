@@ -52,9 +52,9 @@ end if
 <html>
 
 <head>
-    <title>Ricerca avanzata - Decor &amp; Flowers</title>
+    <title>Ricerca avanzata - BuggyRC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Ricerca avanzata - Decor &amp; Flowers.">
+    <meta name="description" content="Ricerca avanzata - BuggyRC">
     <meta name="keywords" content="">
     <!--#include file="inc_head.asp"-->
 </head>

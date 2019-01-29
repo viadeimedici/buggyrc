@@ -3,9 +3,9 @@
 <html>
 
 <head>
-    <title>Commenti piante artificiali | Opinioni fiori artificiali | Decor &amp; Flowers</title>
+    <title>Commenti e Opinioni BuggyRC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Decor &amp; Flowers.">
+    <meta name="description" content="BuggyRC">
     <meta name="keywords" content="">
     <!--#include file="inc_head.asp"-->
 </head>
@@ -23,7 +23,7 @@
         <div class="col-md-9">
             <div class="row top-buffer">
                 <div class="col-md-12">
-                    <h1 class="slogan subtitle">Commenti su i prodotti acquistati da Decor &amp; Flowers</h1>
+                    <h1 class="slogan subtitle">Commenti su i prodotti acquistati da BuggyRC</h1>
                     <div class="panel panel-default" style="border: none;">
                         <div class="panel-body">
                             <p style="font-size: 1.2em; text-align: justify">

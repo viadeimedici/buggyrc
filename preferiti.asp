@@ -65,9 +65,9 @@ end if
 <html>
 
 <head>
-    <title>Decor &amp; Flowers - Prodotti preferiti</title>
+    <title>BuggyRC - Prodotti preferiti</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Decor &amp; Flowers.">
+    <meta name="description" content="BuggyRC">
     <meta name="keywords" content="">
     <!--#include file="inc_head.asp"-->
 </head>
@@ -121,7 +121,7 @@ end if
 																		Do while not rs.EOF
 																		Url_Madre=rs("Url_Madre")
 																		If Len(Url_Madre)>0 then
-									                    Url_Madre="/prodotti-arredo-decorazioni/"&Url_Madre
+									                    Url_Madre="/prodotti/"&Url_Madre
 									                  Else
 									                    Url_Madre="/scheda.asp?pkid_prod="&Url_Madre
 									                  End If
@@ -183,7 +183,7 @@ end if
 
 						<div class="col-md-4">
 								<div class="alert alert-success" role="alert" style="text-align: center;">
-                  <em>Hai bisogno di aiuto? Contattaci!</em><br /><br /><a href="mailto:info@decorandflowers.it" class="alert-link"><span class="glyphicon glyphicon-envelope"></span> info@decorandflowers.it</a>
+                  <em>Hai bisogno di aiuto? Contattaci!</em><br /><br /><a href="mailto:info@buggyrc.it" class="alert-link"><span class="glyphicon glyphicon-envelope"></span> info@buggyrc.it</a>
                   <br /><br />Lunedi - Venerdi<br />9.00 - 13.00 | 14.00 - 18.00<br />Sabato e Domenica CHIUSI<br />
                 </div>
 						</div>

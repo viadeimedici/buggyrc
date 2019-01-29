@@ -14,29 +14,34 @@ voce_p="Prodotti"
 'nrs.Open sql, conn, 3, 3
 'if nrs.recordcount>0 then
 '		Do While not nrs.EOF
+'		Url=nrs("Url")
+'		if Len(Url)>0 THEN
+
+'		Else
 '		PkId=nrs("PkId")
-'		Titolo=nrs("Titolo")
-'		Url=ConvertiTitoloInNomeScript(Titolo, PkId, "PR")
-'		Set FSO = CreateObject("Scripting.FileSystemObject")
-'		Set Documento = FSO.OpenTextFile(Server.MapPath("/prodotti/") & "\" & Url, 2, True)
-'		ContenutoFile = ""
-'		ContenutoFile = ContenutoFile & "<" & "%" & vbCrLf
-'		ContenutoFile = ContenutoFile & "id = "& PkId &"" & vbCrLf
-'		ContenutoFile = ContenutoFile & "%" & ">" & vbCrLf
-'		ContenutoFile = ContenutoFile & "<!--#include file=""inc_scheda_prodotto.asp""-->"
-'		Documento.Write ContenutoFile
-'		Set Documento = Nothing
-'		Set FSO = Nothing
+'			Titolo=nrs("Titolo")
+'			Url=ConvertiTitoloInNomeScript(Titolo, PkId, "PR")
+'			Set FSO = CreateObject("Scripting.FileSystemObject")
+'			Set Documento = FSO.OpenTextFile(Server.MapPath("/prodotti/") & "\" & Url, 2, True)
+'			ContenutoFile = ""
+'			ContenutoFile = ContenutoFile & "<" & "%" & vbCrLf
+'			ContenutoFile = ContenutoFile & "id = "& PkId &"" & vbCrLf
+'			ContenutoFile = ContenutoFile & "%" & ">" & vbCrLf
+'			ContenutoFile = ContenutoFile & "<!--#include file=""inc_scheda_prodotto.asp""-->"
+'			Documento.Write ContenutoFile
+'			Set Documento = Nothing
+'			Set FSO = Nothing
 
-'		nrs("Url")=Url
+'			nrs("Url")=Url
 
-'		nrs("InEvidenza")=0
-'		nrs("InEvidenza_Da")=Null
-'		nrs("InEvidenza_A")=Null
-'		nrs("InEvidenza_A")="31/12/2049 23:59:00"
-'		nrs("InEvidenza_Posizione")=100
+'			nrs("InEvidenza")=0
+'			nrs("InEvidenza_Da")=Null
+	'		nrs("InEvidenza_A")=Null
+'			nrs("InEvidenza_A")="31/12/2049 23:59:00"
+'			nrs("InEvidenza_Posizione")=100
 
-'		nrs.update
+'			nrs.update
+'		end if
 '	nrs.movenext
 '	loop
 'end if
@@ -308,7 +313,7 @@ return confirm("Si è sicuri di voler eliminare la riga?");
 								if crs.recordcount>0 then
 									categoria_1=crs("Titolo_1")
 								else
-									categoria_1=" - "	
+									categoria_1=" - "
 								end if
 								crs.close
 							else

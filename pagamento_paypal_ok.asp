@@ -155,23 +155,23 @@ End If
 			HTML1 = HTML1 & "<html>"
 			HTML1 = HTML1 & "<head>"
 			HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-			HTML1 = HTML1 & "<title>DecorAndFlowers</title>"
+			HTML1 = HTML1 & "<title>BuggyRc</title>"
 			HTML1 = HTML1 & "</head>"
 			HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
 			HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
 			HTML1 = HTML1 & "<tr>"
 			HTML1 = HTML1 & "<td>"
 			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000>Grazie "&nominativo_email&" per aver scelto i nostri prodotti!<br>Questa &egrave; un email di conferma per il completamento dell'ordine n&deg; "&idordine&".<br> Il nostro staff avr&agrave; cura di spedirti la merce appena la banca avr&agrave; notificato il pagamento con Paypal.</font><br>"
-			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000><br><br>Cordiali Saluti, lo staff di DecorAndFlowers.it</font>"
+			HTML1 = HTML1 & "<font face=Verdana size=3 color=#000000><br><br>Cordiali Saluti, lo staff di BuggyRC.it</font>"
 			HTML1 = HTML1 & "</td>"
 			HTML1 = HTML1 & "</tr>"
 			HTML1 = HTML1 & "</table>"
 			HTML1 = HTML1 & "</body>"
 			HTML1 = HTML1 & "</html>"
 
-			Mittente = "info@decorandflowers.it"
+			Mittente = "info@buggyrc.it"
 			Destinatario = email
-			Oggetto = "Conferma pagamento ordine n "&idordine&" con Paypal a DecorAndFlowers.it"
+			Oggetto = "Conferma pagamento ordine n "&idordine&" con Paypal a BuggyRC.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -186,11 +186,11 @@ End If
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -216,7 +216,7 @@ End If
 			HTML1 = HTML1 & "<html>"
 			HTML1 = HTML1 & "<head>"
 			HTML1 = HTML1 & "<meta http-equiv=""Content-Type"" content=""text/html; charset=iso-8859-1"">"
-			HTML1 = HTML1 & "<title>DecorAndFlowers</title>"
+			HTML1 = HTML1 & "<title>BuggyRC</title>"
 			HTML1 = HTML1 & "</head>"
 			HTML1 = HTML1 & "<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>"
 			HTML1 = HTML1 & "<table width='553' border='0' cellspacing='0' cellpadding='0'>"
@@ -230,9 +230,9 @@ End If
 			HTML1 = HTML1 & "</body>"
 			HTML1 = HTML1 & "</html>"
 
-			Mittente = "info@decorandflowers.it"
-			Destinatario = "info@decorandflowers.it"
-			Oggetto = "Conferma pagamento ordine n. "&idordine&" con Paypal a DecorAndFlowers.it"
+			Mittente = "info@buggyrc.it"
+			Destinatario = "info@buggyrc.it"
+			Oggetto = "Conferma pagamento ordine n. "&idordine&" con Paypal a BuggyRC.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -247,11 +247,11 @@ End If
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -272,9 +272,9 @@ End If
 
 			'invio al webmaster
 
-			Mittente = "info@decorandflowers.it"
+			Mittente = "info@buggyrc.it"
 			Destinatario = "viadeimedici@gmail.com"
-			Oggetto = "Conferma pagamento ordine n. "&idordine&" con Paypal a DecorAndFlowers.it"
+			Oggetto = "Conferma pagamento ordine n. "&idordine&" con Paypal a BuggyRC.it"
 			Testo = HTML1
 
 			Set eMail_cdo = CreateObject("CDO.Message")
@@ -289,11 +289,11 @@ End If
 				' Timeout
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 				' Server SMTP di uscita
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.buggyrc.it"
 				' Porta SMTP
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 25
 				'Username
-				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@decorandflowers.it"
+				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "postmaster@buggyrc.it"
 				'Password
 				.Fields.item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "alessandrO81"
 
@@ -316,16 +316,16 @@ End If
 	end if
 
 	If ack <> "SUCCESS" Then
-		response.Redirect("https://www.decorandflowers.it/pagamento_paypal_ko.asp")
+		response.Redirect("https://www.buggyrc.it/pagamento_paypal_ko.asp")
 	end if
 %>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Decor &amp; Flowers</title>
+    <title>BuggyRC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Decor &amp; Flowers.">
+    <meta name="description" content="BuggyRC">
     <meta name="keywords" content="">
     <!--#include file="inc_head.asp"-->
 </head>
@@ -398,7 +398,7 @@ End If
 												<br / ><br / >
 												<em>Nel caso in cui si volessero modificare alcuni dati o cambiare il sistema di pagamento l'ordine &egrave; presente nell'Area Clienti.</em>
 												<br / ><br / >
-												Cordiali saluti, lo staff di DecorAndFlowers.it
+												Cordiali saluti, lo staff di BuggyRC.it
 												<br / ><br / >
 										</p>
 								<%else%>
@@ -410,7 +410,7 @@ End If
 														Potrai seguire lo stato del tuo ordine direttamente dall'area clienti, comunque sar&agrave; cura del nostro staff informarti per email dell'invio dei prodotti ordinati.
 												<br />
 												<br />
-												Cordiali saluti, lo staff di DecorAndFlowers.it
+												Cordiali saluti, lo staff di BuggyRC.it
 												<br / ><br / >
 										</p>
 								<%end if%>

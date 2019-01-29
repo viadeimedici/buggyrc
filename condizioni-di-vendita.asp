@@ -3,9 +3,9 @@
 <html>
 
 <head>
-    <title>Condizioni di vendita ecommerce Decor &amp; Flowers</title>
+    <title>Condizioni di vendita ecommerce BuggyRC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Decor &amp; Flowers.">
+    <meta name="description" content="BuggyRC">
     <meta name="keywords" content="">
     <!--#include file="inc_head.asp"-->
 </head>
@@ -23,7 +23,7 @@
         <div class="col-md-9">
             <div class="row top-buffer">
                 <div class="col-md-12">
-                    <h1 class="slogan subtitle">Condizioni di vendita Decor &amp; Flowers</h1>
+                    <h1 class="slogan subtitle">Condizioni di vendita BuggyRC</h1>
                     <div class="panel panel-default" style="border: none;">
                         <div class="panel-body">
                             <p class="descrizione">
@@ -65,7 +65,7 @@
                                 - che l'imballo risulti integro, non danneggiato, n&eacute; bagnato o comunque alterato, anche nei materiali di chiusura (nastro adesivo, carta da imballo).<br />
                                 Eventuali danni all'imballo e/o al prodotto o la mancata corrispondenza del numero dei colli o delle indicazioni, devono essere immediatamente contestati, apponendo &quot;CON RISERVA SALVO VERIFICA CONTENUTO&quot; scritto sulla prova di consegna del corriere oppure potete respingere il pacco scrivendo &quot;RIFIUTATO, PACCO DANNEGGIATO&quot;.<br />
                                 Una volta firmato il documento del corriere, il Cliente non potr&agrave; opporre alcuna contestazione circa le caratteristiche esteriori di quanto consegnato.<br />
-                                Se gli articoli risultassero danneggiati contattateci immediatamente via e-mail (info@decorandflowers.it).<br />
+                                Se gli articoli risultassero danneggiati contattateci immediatamente via e-mail (info@BuggyRC.it).<br />
                                 Il corriere espresso prevede due tentativi di consegna. In caso di assenza dopo il secondo tentativo le spese per la terza riconsegna sono a carico del destinatario, altrimenti &egrave; possibile ritirare il pacco presso la sede di zona del corriere.
                             </p>
                             <p><a name="pagamento"></a>

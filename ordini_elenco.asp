@@ -18,9 +18,9 @@ end if
 <html>
 
 <head>
-    <title>Decor &amp; Flowers</title>
+    <title>BuggyRC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Decor &amp; Flowers.">
+    <meta name="description" content="BuggyRC">
     <meta name="keywords" content="">
     <!--#include file="inc_head.asp"-->
 		<script language="JavaScript" type="text/JavaScript">
@@ -197,12 +197,6 @@ end if
 
 						<p>&nbsp;</p>
 
-						<!--<div class="col-md-4">
-								<div class="alert alert-success" role="alert" style="text-align: center;">
-                  <em>Hai bisogno di aiuto? Contattaci!</em><br /><br /><a href="mailto:info@decorandflowers.it" class="alert-link"><span class="glyphicon glyphicon-envelope"></span> info@decorandflowers.it</a>
-                  <br /><br />Lunedi - Venerdi<br />9.00 - 13.00 | 14.00 - 18.00<br />Sabato e Domenica CHIUSI<br />
-                </div>
-						</div>-->
         </div>
 
 

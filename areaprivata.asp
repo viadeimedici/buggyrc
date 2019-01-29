@@ -4,9 +4,9 @@
 <html>
 
 <head>
-    <title>Decor &amp; Flowers</title>
+    <title>BuggyRC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Decor &amp; Flowers.">
+    <meta name="description" content="BuggyRC">
     <meta name="keywords" content="">
     <!--#include file="inc_head.asp"-->
 </head>

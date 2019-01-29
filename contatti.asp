@@ -3,9 +3,9 @@
 <html>
 
 <head>
-    <title>Contatti Decor &amp; Flowers - vendita fiori piante finte</title>
+    <title>Contatti BuggyRC</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Da Decor and Flowers &egrave; possibile trovare un'ampia gamma di fiori e piante finte, composizioni floreali, vasi, cesti e vari oggetti in vetro e ceramica per arredare con stile la tua casa, personalizzare le tue stanze, allestire un negozio, preparare un evento o una manifestazione. L'assortimento di piante e fiori artificiali in vendita &egrave; in pronta consegna con spedizione in tutta Italia con pagamenti online sicuri e garantiti.">
+    <meta name="description" content="BuggyRC">
     <meta name="keywords" content="">
     <!--#include file="inc_head.asp"-->
 </head>
@@ -24,12 +24,11 @@
         <div class="col-md-9">
           <div class="row top-buffer">
               <div class="col-md-12">
-                  <h1 class="slogan subtitle">Decor &amp; Flowers,<br />vendita fiori e piante finte</h1>
+                  <h1 class="slogan subtitle">BuggyRC</h1>
                   <div class="panel panel-default" style="border: none;">
                       <div class="panel-body">
                           <p style="text-align: justify">
-                            Da Decor and Flowers &egrave; possibile trovare un'ampia gamma di fiori e piante finte, composizioni floreali, vasi, cesti e vari oggetti in vetro e ceramica per arredare con stile la tua casa, personalizzare le tue stanze, allestire un negozio, preparare un evento o una manifestazione. L'assortimento di piante e fiori artificiali in vendita &egrave; in pronta consegna con spedizione in tutta Italia con pagamenti online sicuri e garantiti.
-<br /><em>Dai un tocco di colore al tuo ambiente!</em>
+
                           </p>
                       </div>
                   </div>
@@ -37,16 +36,16 @@
           </div>
             <div class="row top-buffer">
                 <div class="col-md-12">
-                    <h1 class="slogan subtitle">Contatti e riferimenti Decor &amp; Flowers</h1>
+                    <h1 class="slogan subtitle">Contatti e riferimenti BuggyRC</h1>
                     <div class="panel panel-default" style="border: none;">
                         <div class="panel-body">
                             <p style="font-size: 1.2em; text-align: justify">
-                              Decorandflowers<br>
+                              BuggyRc.it &egrave; un marchio di<br />Decorandflowers<br>
                               C.F. e Iscr. Reg. Impr. di Firenze 06741510488<br />
                               R.E.A. di Firenze<br />
                               Via delle mimose, 13<br />
                               50050 Capraia e Limite (Firenze)<br />
-                              E-mail: info@decorandflowers.it
+                              E-mail: info@buggyrc.it
                             </p>
                         </div>
                     </div>
@@ -73,7 +72,7 @@
                   sql = "SELECT TOP 1 * FROM Immagini WHERE FkContenuto="&Pkid_Cat_1&" and Tabella='Categorie_1' ORDER BY Posizione ASC"
                   img_rs.Open sql, conn, 1, 1
                   if img_rs.recordcount>0 then
-                    img="https://www.decorandflowers.it/public/thumb/"&NoLettAcc(img_rs("File"))
+                    img="https://www.buggyrc.it/public/thumb/"&NoLettAcc(img_rs("File"))
                   else
                     img="images/thumb_d&f.png"
                   end if
